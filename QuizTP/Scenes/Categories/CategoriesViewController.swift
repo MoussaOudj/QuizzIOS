@@ -23,7 +23,7 @@ class CategoriesViewController: UIViewController {
 extension CategoriesViewController:UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let createQuizz = TestQuizViewController.newInstance(selectedTheme: categoriesTable[indexPath.row])
+        let createQuizz = QuizViewController.newInstance(selectedTheme: categoriesTable[indexPath.row])
         self.navigationController?.pushViewController(createQuizz, animated: true)
     }
     

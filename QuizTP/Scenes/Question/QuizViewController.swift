@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TestQuizViewController: UIViewController {
+class QuizViewController: UIViewController {
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var collectionAnswerView: UICollectionView!
@@ -17,8 +17,8 @@ class TestQuizViewController: UIViewController {
     var theme:String!
     
     
-    static func newInstance(selectedTheme: String) -> TestQuizViewController {
-        let viewController = TestQuizViewController()
+    static func newInstance(selectedTheme: String) -> QuizViewController {
+        let viewController = QuizViewController()
         viewController.theme = selectedTheme
         return viewController
     }
@@ -63,7 +63,7 @@ class TestQuizViewController: UIViewController {
     }
 }
 
-extension TestQuizViewController:UICollectionViewDelegate{
+extension QuizViewController:UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(answerTable[indexPath.row])
@@ -77,7 +77,7 @@ extension TestQuizViewController:UICollectionViewDelegate{
     
 }
 
-extension TestQuizViewController:UICollectionViewDataSource{
+extension QuizViewController:UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return answerTable.count
     }
