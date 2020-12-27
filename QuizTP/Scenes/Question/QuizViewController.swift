@@ -35,17 +35,33 @@ class QuizViewController: UIViewController {
     
     
     fileprivate func updateQuestion(_ question:Question) {
-        self.questionLabel.text = question.question
+        
+        
         self.answerTable = question.choix
         self.goodAnswer = question.reponse
-        self.collectionAnswerView.reloadData()
+        
+        UIView.transition(with: self.questionLabel,
+                      duration: 2,
+                       options: .transitionCrossDissolve,
+                    animations: {
+                        self.collectionAnswerView.isUserInteractionEnabled = false
+                        self.questionLabel.text = question.question
+                 }, completion: nil)
+        
+        UIView.transition(with: self.collectionAnswerView,
+                          duration: 1,
+                          options: .transitionCrossDissolve,
+                          animations: {
+                            self.collectionAnswerView.reloadData()
+                            self.collectionAnswerView.isUserInteractionEnabled = true
+                          })
     }
     
     fileprivate func requestQuestion() {
         httpQuestionService.getQuestionFor(categorie: self.theme) { (question) in
             print("=== LABEL TEXT QUESTION : \(question) ===")
             DispatchQueue.main.async {
-                self.updateQuestion( question)
+                self.updateQuestion(question)
             }
         }
     }
