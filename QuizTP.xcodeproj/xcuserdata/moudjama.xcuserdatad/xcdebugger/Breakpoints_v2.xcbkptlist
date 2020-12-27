@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7C3CFEF2-D442-4239-BC21-28EDAFA679BD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuizTP/Scenes/Categories/CategoriesCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "CategoriesCollectionViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - dc3ccaa5d2216577"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QuizTP.CategoriesCollectionViewCell.categorieLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "QuizTP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moudjama/Documents/QuizTP/QuizTP/Scenes/Categories/CategoriesCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - 7851d0a2a43f394b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QuizTP.CategoriesCollectionViewCell.categorieLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "QuizTP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moudjama/Documents/QuizTP/QuizTP/Scenes/Categories/CategoriesCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - abd2b5c4c1633df8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QuizTP.CategoriesCollectionViewCell.categorieLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "QuizTP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moudjama/Documents/QuizTP/QuizTP/Scenes/Categories/CategoriesCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - 413ade28c867de27"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QuizTP.CategoriesCollectionViewCell.categorieLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "QuizTP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moudjama/Documents/QuizTP/QuizTP/Scenes/Categories/CategoriesCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - 72c4297b02d5edca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QuizTP.CategoriesCollectionViewCell.init(frame: __C.CGRect) -&gt; QuizTP.CategoriesCollectionViewCell"
+                  moduleName = "QuizTP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moudjama/Documents/QuizTP/QuizTP/Scenes/Categories/CategoriesCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "113">
+               </Location>
+               <Location
+                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - 949068ec3360386d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QuizTP.CategoriesCollectionViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;QuizTP.CategoriesCollectionViewCell&gt;"
+                  moduleName = "QuizTP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moudjama/Documents/QuizTP/QuizTP/Scenes/Categories/CategoriesCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "102">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
