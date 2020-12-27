@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestQuizViewController" customModule="QuizQuiz" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestQuizViewController" customModule="QuizTP" customModuleProvider="target">
             <connections>
                 <outlet property="collectionAnswerView" destination="GbA-6D-r2x" id="XZZ-d4-z9p"/>
                 <outlet property="questionLabel" destination="x4P-6b-bGW" id="APn-Uo-kwE"/>
@@ -21,13 +21,17 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4P-6b-bGW">
-                    <rect key="frame" x="10" y="54" width="394" height="20.5"/>
+                    <rect key="frame" x="10" y="94" width="394" height="295.5"/>
+                    <color key="backgroundColor" red="0.0" green="0.32033333330000002" blue="0.62" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="x4P-6b-bGW" secondAttribute="height" multiplier="4:3" id="9L9-3Q-QxN"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="1" green="0.83333333330000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="GbA-6D-r2x">
-                    <rect key="frame" x="10" y="84.5" width="394" height="801.5"/>
+                    <rect key="frame" x="10" y="399.5" width="394" height="452.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hsu-0T-2i3">
                         <size key="itemSize" width="128" height="128"/>
@@ -38,15 +42,15 @@
                 </collectionView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.0" green="0.24733333330000001" blue="0.53000000000000003" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="GbA-6D-r2x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="1ZE-2f-VIf"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GbA-6D-r2x" secondAttribute="trailing" constant="10" id="KND-LS-oMG"/>
-                <constraint firstItem="x4P-6b-bGW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="h2d-kV-nJ8"/>
-                <constraint firstAttribute="bottom" secondItem="GbA-6D-r2x" secondAttribute="bottom" constant="10" id="qyU-Dc-eLD"/>
-                <constraint firstItem="x4P-6b-bGW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="svI-hc-Z1j"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="x4P-6b-bGW" secondAttribute="trailing" constant="10" id="xdO-3V-MpR"/>
-                <constraint firstItem="GbA-6D-r2x" firstAttribute="top" secondItem="x4P-6b-bGW" secondAttribute="bottom" constant="10" id="z9f-XI-JJ1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GbA-6D-r2x" secondAttribute="trailing" constant="10" id="06J-u7-hz0"/>
+                <constraint firstItem="GbA-6D-r2x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Bnq-EB-iMB"/>
+                <constraint firstItem="x4P-6b-bGW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="KwF-TM-w7y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="GbA-6D-r2x" secondAttribute="bottom" constant="10" id="TTm-CP-Mvh"/>
+                <constraint firstItem="GbA-6D-r2x" firstAttribute="top" secondItem="x4P-6b-bGW" secondAttribute="bottom" constant="10" id="UgW-re-kkr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="x4P-6b-bGW" secondAttribute="trailing" constant="10" id="hom-yi-ADo"/>
+                <constraint firstItem="x4P-6b-bGW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="tTa-Xa-v74"/>
             </constraints>
             <point key="canvasLocation" x="-4.3478260869565224" y="67.633928571428569"/>
         </view>

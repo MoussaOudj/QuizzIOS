@@ -14,6 +14,8 @@ class CategoriesViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        //0, 63, 136
+        self.categoriesCollectionView.backgroundColor = .init(red: 0, green: 63/255, blue: 136/255, alpha: 1)
         self.categoriesCollectionView.register(UINib(nibName: "CategoriesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "categorieCell")
         self.categoriesCollectionView.delegate = self
         self.categoriesCollectionView.dataSource = self
@@ -42,6 +44,11 @@ extension CategoriesViewController:UICollectionViewDataSource{
         return cell
         
     }
+}
 
-
+extension CategoriesViewController:UICollectionViewDelegateFlowLayout{
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.categoriesCollectionView.bounds.width/2 - 10, height: self.categoriesCollectionView.bounds.height/4 - 10 )
+    }
 }

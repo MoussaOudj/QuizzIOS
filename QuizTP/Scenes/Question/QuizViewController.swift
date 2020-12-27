@@ -25,6 +25,8 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //0, 63, 136
+        self.collectionAnswerView.backgroundColor = .init(red: 0, green: 63/255, blue: 136/255, alpha: 1)
         self.collectionAnswerView.register(UINib(nibName: "AnswerCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "answerCell")
         self.collectionAnswerView.delegate = self
         self.collectionAnswerView.dataSource = self
@@ -88,8 +90,14 @@ extension QuizViewController:UICollectionViewDataSource{
         cell.answer.text = answerTable[indexPath.row]
         return cell
     }
+}
+
+
+extension QuizViewController:UICollectionViewDelegateFlowLayout{
     
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.collectionAnswerView.bounds.width/2 - 10, height: self.collectionAnswerView.bounds.height/2 - 10)
+    }
 }
 
 

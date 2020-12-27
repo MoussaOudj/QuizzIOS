@@ -13,8 +13,10 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.backgroundColor = .init(red: 241/255, green: 240/255, blue: 204/255, alpha: 1)
-        self.categorieLabel.textColor = .init(red: 167/255, green: 29/255, blue: 49/255, alpha: 1)
+        //0, 80, 157
+        self.backgroundColor = .init(red: 0, green: 80/255, blue: 157/255, alpha: 1)
+        //255, 213, 0
+        self.categorieLabel.textColor = .init(red: 1, green: 213/255, blue: 0, alpha: 1)
     }
 
 }
