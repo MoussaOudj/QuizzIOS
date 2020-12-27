@@ -11,6 +11,7 @@ class TestQuizViewController: UIViewController {
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var collectionAnswerView: UICollectionView!
+    let httpQuestionService = HttpQuestionService()
     var answerTable:[String] = []
     var goodAnswer:String?
     var theme:String!
@@ -38,9 +39,8 @@ class TestQuizViewController: UIViewController {
         self.collectionAnswerView.reloadData()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-        requestForQuestion { (question) in
+    fileprivate func requestQuestion() {
+        httpQuestionService.getQuestionFor(categorie: self.theme) { (question) in
             print("=== LABEL TEXT QUESTION : \(question) ===")
             DispatchQueue.main.async {
                 self.updateQuestion( question)
@@ -48,48 +48,13 @@ class TestQuizViewController: UIViewController {
         }
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        requestQuestion()
     }
     
-    func requestForQuestion(completionHandler: @escaping (_ result: Question) -> Void ){
-        //create the url with NSURL
-        let url = URL(string: "https://www.openquizzdb.org/api.php?key=74G62ZDZZ8&categ=\(self.theme ?? "")")! //change the url
-        //create the session object
-        let session = URLSession.shared
-        //now create the URLRequest object using the url object
-        let request = URLRequest(url: url)
-        //create dataTask using the session object to send data to the server
-        let task = session.dataTask(with: request as URLRequest) { data, response, error in
-            guard error == nil else {
-                print("ERROR")
-                return
-            }
-            guard let data = data else {
-                return
-            }
-            do {
-                //create json object from data
-                if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
-                    guard let results = json["results"] as? [[String:Any]] else {return}
-                    print("=== RESULTS ===")
-                    print(results)
-                    print("=== END RESULTS ===")
-                    print("=== QUESTION PROCESSING WITH RESULT COUNT : \(results.count) ===")
-                    if(results.count == 0){
-                    }else {
-                        guard let question = results[0]["question"] as? String else {return}
-                        guard let choix = results[0]["autres_choix"] as? [String] else {return}
-                        guard let reponse = results[0]["reponse_correcte"] as? String else {return}
-                        completionHandler(Question(question: question, reponse: reponse, choix: choix))
-                    }
-                    print("=== END PROCESSING ===")
-                }
-            } catch let error {
-                print(error.localizedDescription)
-            }
-        }
-        task.resume()
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     @IBAction func requester(_ sender: Any) {
@@ -105,12 +70,7 @@ extension TestQuizViewController:UICollectionViewDelegate{
         if let goodAnswer = goodAnswer {
             if answerTable[indexPath.row] == goodAnswer {
                 print("BONNE REPONSE !!!")
-                requestForQuestion { (question) in
-                    print("=== LABEL TEXT QUESTION : \(question) ===")
-                    DispatchQueue.main.async {
-                        self.updateQuestion( question)
-                    }
-                }
+                requestQuestion()
             }
         }
     }
