@@ -20,12 +20,12 @@
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - dc3ccaa5d2216577"
+                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - 61b2faded53374c7"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "QuizTP.CategoriesCollectionViewCell.categorieLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
-                  moduleName = "QuizTP"
+                  symbolName = "QuizTV.CategoriesCollectionViewCell.categorieLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "QuizTV"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/moudjama/Documents/QuizTP/QuizTP/Scenes/Categories/CategoriesCollectionViewCell.swift"
                   startingColumnNumber = "9223372036854775807"
@@ -35,12 +35,12 @@
                   offsetFromSymbolStart = "88">
                </Location>
                <Location
-                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - 7851d0a2a43f394b"
+                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - 8dd780dba70ed0cb"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "QuizTP.CategoriesCollectionViewCell.categorieLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
-                  moduleName = "QuizTP"
+                  symbolName = "QuizTV.CategoriesCollectionViewCell.categorieLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "QuizTV"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/moudjama/Documents/QuizTP/QuizTP/Scenes/Categories/CategoriesCollectionViewCell.swift"
                   startingColumnNumber = "9223372036854775807"
@@ -50,12 +50,12 @@
                   offsetFromSymbolStart = "155">
                </Location>
                <Location
-                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - abd2b5c4c1633df8"
+                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - fd5065fdc072dc74"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "QuizTP.CategoriesCollectionViewCell.categorieLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
-                  moduleName = "QuizTP"
+                  symbolName = "QuizTV.CategoriesCollectionViewCell.categorieLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "QuizTV"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/moudjama/Documents/QuizTP/QuizTP/Scenes/Categories/CategoriesCollectionViewCell.swift"
                   startingColumnNumber = "9223372036854775807"
@@ -65,12 +65,12 @@
                   offsetFromSymbolStart = "59">
                </Location>
                <Location
-                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - 413ade28c867de27"
+                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - 76f4b4e2ae4635b7"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "QuizTP.CategoriesCollectionViewCell.categorieLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "QuizTP"
+                  symbolName = "QuizTV.CategoriesCollectionViewCell.categorieLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "QuizTV"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/moudjama/Documents/QuizTP/QuizTP/Scenes/Categories/CategoriesCollectionViewCell.swift"
                   startingColumnNumber = "9223372036854775807"
@@ -80,12 +80,12 @@
                   offsetFromSymbolStart = "64">
                </Location>
                <Location
-                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - 72c4297b02d5edca"
+                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - 86421319bddf004"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "QuizTP.CategoriesCollectionViewCell.init(frame: __C.CGRect) -&gt; QuizTP.CategoriesCollectionViewCell"
-                  moduleName = "QuizTP"
+                  symbolName = "QuizTV.CategoriesCollectionViewCell.init(frame: __C.CGRect) -&gt; QuizTV.CategoriesCollectionViewCell"
+                  moduleName = "QuizTV"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/moudjama/Documents/QuizTP/QuizTP/Scenes/Categories/CategoriesCollectionViewCell.swift"
                   startingColumnNumber = "9223372036854775807"
@@ -95,12 +95,12 @@
                   offsetFromSymbolStart = "113">
                </Location>
                <Location
-                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - 949068ec3360386d"
+                  uuid = "7DADDF2F-1CCD-40FA-90FA-899A09F6F641 - 6b434380b3f2e7eb"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "QuizTP.CategoriesCollectionViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;QuizTP.CategoriesCollectionViewCell&gt;"
-                  moduleName = "QuizTP"
+                  symbolName = "QuizTV.CategoriesCollectionViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;QuizTV.CategoriesCollectionViewCell&gt;"
+                  moduleName = "QuizTV"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/moudjama/Documents/QuizTP/QuizTP/Scenes/Categories/CategoriesCollectionViewCell.swift"
                   startingColumnNumber = "9223372036854775807"

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="17701" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestQuizViewController" customModule="QuizTV" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionAnswerView" destination="GbA-6D-r2x" id="XZZ-d4-z9p"/>
+                <outlet property="questionLabel" destination="x4P-6b-bGW" id="APn-Uo-kwE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4P-6b-bGW">
+                    <rect key="frame" x="0.0" y="60" width="1840" height="21"/>
+                    <color key="backgroundColor" red="0.0" green="0.32033333330000002" blue="0.62" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.83333333330000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="GbA-6D-r2x">
+                    <rect key="frame" x="0.0" y="81" width="1840" height="939"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hsu-0T-2i3">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="x4P-6b-bGW" secondAttribute="trailing" id="9xU-rz-F5s"/>
+                <constraint firstItem="GbA-6D-r2x" firstAttribute="top" secondItem="x4P-6b-bGW" secondAttribute="bottom" id="WQI-cN-6HM"/>
+                <constraint firstItem="x4P-6b-bGW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fUy-8b-34h"/>
+                <constraint firstItem="x4P-6b-bGW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="iG0-mG-Bho"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="GbA-6D-r2x" secondAttribute="bottom" id="jyU-B1-125"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GbA-6D-r2x" secondAttribute="trailing" id="lIo-Fs-5Oq"/>
+                <constraint firstItem="GbA-6D-r2x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tvC-eP-1Vr"/>
+            </constraints>
+            <point key="canvasLocation" x="78.75" y="113"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
