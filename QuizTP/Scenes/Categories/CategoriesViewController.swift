@@ -10,7 +10,7 @@ import UIKit
 class CategoriesViewController: UIViewController {
 
     @IBOutlet weak var categoriesCollectionView: UICollectionView!
-    let categoriesTable:[(String,String)] = [("cinema","image-cine"), ("culture","image-culture"), ("informatique","image-informatique"), ("loisirs","image-loisirs"), ("sciences","image-sciences"), ("television","image-television"), ("arts","image-arts"), ("musique","image-musique")]
+    let categoriesTable:[(categorie:String,image:String)] = [("cinema","image-cine"), ("culture","image-culture"), ("informatique","image-informatique"), ("loisirs","image-loisirs"), ("sciences","image-sciences"), ("television","image-television"), ("arts","image-arts"), ("musique","image-musique")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +24,7 @@ class CategoriesViewController: UIViewController {
 
 extension CategoriesViewController:UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let createQuizz = QuizViewController.newInstance(selectedTheme: categoriesTable[indexPath.row].0)
+        let createQuizz = QuizViewController.newInstance(selectedTheme: categoriesTable[indexPath.row].categorie)
         self.navigationController?.pushViewController(createQuizz, animated: true)
     }
     
@@ -38,7 +38,7 @@ extension CategoriesViewController:UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categorieCell", for: indexPath) as! CategoriesCollectionViewCell
-        cell.configureCell(imageView: UIImageView(image: UIImage(named: categoriesTable[indexPath.row].1)), customText: categoriesTable[indexPath.row].0)
+        cell.configureCell(imageView: UIImageView(image: UIImage(named: categoriesTable[indexPath.row].image)), customText: categoriesTable[indexPath.row].categorie)
         return cell
         
     }
@@ -50,8 +50,9 @@ extension CategoriesViewController:UICollectionViewDelegateFlowLayout{
         
         #if os(tvOS)
         return CGSize(width: self.categoriesCollectionView.bounds.width/4, height: self.categoriesCollectionView.bounds.height/4 )
+        #elseif targetEnvironment(macCatalyst)
+        return CGSize(width: self.categoriesCollectionView.bounds.width/4 - 10, height: self.categoriesCollectionView.bounds.height/2 - 10 )
         #endif
-        
         return CGSize(width: self.categoriesCollectionView.bounds.width/2 - 10, height: self.categoriesCollectionView.bounds.height/4 - 10 )
     }
     
