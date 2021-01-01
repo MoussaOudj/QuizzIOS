@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F19035A259BA87400848916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F190359259BA87400848916 /* Assets.xcassets */; };
 		8F19035D259BA87400848916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F19035B259BA87400848916 /* LaunchScreen.storyboard */; };
 		8F19036F259BA8B900848916 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D7592598D8D500B38608 /* HomeViewController.swift */; };
 		8F190378259BA8CE00848916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D7062598D76A00B38608 /* AppDelegate.swift */; };
@@ -23,6 +22,9 @@
 		8F6230A2259F388F00B5ED2A /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F6230A1259F388F00B5ED2A /* QuizViewController.xib */; };
 		8F6230B1259F398300B5ED2A /* CategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F6230B0259F398300B5ED2A /* CategoriesCollectionViewCell.xib */; };
 		8F6230B7259F3B4400B5ED2A /* AnswerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F6230B6259F3B4400B5ED2A /* AnswerCollectionViewCell.xib */; };
+		8F6230CE259F47BA00B5ED2A /* CustomCategorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6230CD259F47BA00B5ED2A /* CustomCategorieView.swift */; };
+		8F6230E1259F4BDC00B5ED2A /* CustomCategorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6230CD259F47BA00B5ED2A /* CustomCategorieView.swift */; };
+		8F6230ED259F6C9D00B5ED2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F66D70F2598D76B00B38608 /* Assets.xcassets */; };
 		8F66D7072598D76A00B38608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D7062598D76A00B38608 /* AppDelegate.swift */; };
 		8F66D7102598D76B00B38608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F66D70F2598D76B00B38608 /* Assets.xcassets */; };
 		8F66D7132598D76B00B38608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F66D7112598D76B00B38608 /* LaunchScreen.storyboard */; };
@@ -70,6 +72,7 @@
 		8F6230A1259F388F00B5ED2A /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
 		8F6230B0259F398300B5ED2A /* CategoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		8F6230B6259F3B4400B5ED2A /* AnswerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerCollectionViewCell.xib; sourceTree = "<group>"; };
+		8F6230CD259F47BA00B5ED2A /* CustomCategorieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCategorieView.swift; sourceTree = "<group>"; };
 		8F66D7032598D76A00B38608 /* QuizTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F66D7062598D76A00B38608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F66D70F2598D76B00B38608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,16 +135,56 @@
 		8F190351259BA87300848916 /* QuizTV */ = {
 			isa = PBXGroup;
 			children = (
+				8F6230C4259F432500B5ED2A /* Scenes */,
 				8F190359259BA87400848916 /* Assets.xcassets */,
 				8F19035B259BA87400848916 /* LaunchScreen.storyboard */,
 				8F19035E259BA87400848916 /* Info.plist */,
-				8F623087259F358900B5ED2A /* HomeViewController.xib */,
-				8F62309B259F385E00B5ED2A /* CategoriesViewController.xib */,
-				8F6230A1259F388F00B5ED2A /* QuizViewController.xib */,
-				8F6230B0259F398300B5ED2A /* CategoriesCollectionViewCell.xib */,
-				8F6230B6259F3B4400B5ED2A /* AnswerCollectionViewCell.xib */,
 			);
 			path = QuizTV;
+			sourceTree = "<group>";
+		};
+		8F6230C4259F432500B5ED2A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8F6230C7259F433F00B5ED2A /* Home */,
+				8F6230C6259F433800B5ED2A /* Categories */,
+				8F6230C5259F432F00B5ED2A /* Question */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8F6230C5259F432F00B5ED2A /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				8F6230A1259F388F00B5ED2A /* QuizViewController.xib */,
+				8F6230B6259F3B4400B5ED2A /* AnswerCollectionViewCell.xib */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		8F6230C6259F433800B5ED2A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8F6230B0259F398300B5ED2A /* CategoriesCollectionViewCell.xib */,
+				8F62309B259F385E00B5ED2A /* CategoriesViewController.xib */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		8F6230C7259F433F00B5ED2A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8F623087259F358900B5ED2A /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8F6230CC259F476A00B5ED2A /* CustomCategorieView */ = {
+			isa = PBXGroup;
+			children = (
+				8F6230CD259F47BA00B5ED2A /* CustomCategorieView.swift */,
+			);
+			path = CustomCategorieView;
 			sourceTree = "<group>";
 		};
 		8F66D6FA2598D76A00B38608 = {
@@ -221,6 +264,7 @@
 		8F66D7512598D87A00B38608 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				8F6230CC259F476A00B5ED2A /* CustomCategorieView */,
 				8F66D78A2598DA6900B38608 /* CategoriesViewController.swift */,
 				8F66D78B2598DA6900B38608 /* CategoriesViewController.xib */,
 				8F66D7942598DB0200B38608 /* CategoriesCollectionViewCell.swift */,
@@ -417,9 +461,9 @@
 				8F19035D259BA87400848916 /* LaunchScreen.storyboard in Resources */,
 				8F6230B1259F398300B5ED2A /* CategoriesCollectionViewCell.xib in Resources */,
 				8F623088259F358900B5ED2A /* HomeViewController.xib in Resources */,
+				8F6230ED259F6C9D00B5ED2A /* Assets.xcassets in Resources */,
 				8F6230B7259F3B4400B5ED2A /* AnswerCollectionViewCell.xib in Resources */,
 				8F62309C259F385E00B5ED2A /* CategoriesViewController.xib in Resources */,
-				8F19035A259BA87400848916 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +511,7 @@
 				8F62305F259F344D00B5ED2A /* CategoriesCollectionViewCell.swift in Sources */,
 				8F62306E259F345B00B5ED2A /* HttpQuestionService.swift in Sources */,
 				8F62305A259F343A00B5ED2A /* CategoriesViewController.swift in Sources */,
+				8F6230E1259F4BDC00B5ED2A /* CustomCategorieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +528,7 @@
 				8F66D7772598D91D00B38608 /* Question.swift in Sources */,
 				8F66D78C2598DA6900B38608 /* CategoriesViewController.swift in Sources */,
 				8F66D7722598D90400B38608 /* QuizViewController.swift in Sources */,
+				8F6230CE259F47BA00B5ED2A /* CustomCategorieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

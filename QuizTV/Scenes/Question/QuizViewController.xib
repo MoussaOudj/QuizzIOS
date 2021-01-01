@@ -21,14 +21,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4P-6b-bGW">
-                    <rect key="frame" x="0.0" y="60" width="1840" height="21"/>
+                    <rect key="frame" x="589" y="60" width="1251" height="21"/>
                     <color key="backgroundColor" red="0.0" green="0.32033333330000002" blue="0.62" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="0.83333333330000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="GbA-6D-r2x">
-                    <rect key="frame" x="0.0" y="81" width="1840" height="939"/>
+                    <rect key="frame" x="214" y="89" width="1840" height="939"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hsu-0T-2i3">
                         <size key="itemSize" width="128" height="128"/>
@@ -41,15 +41,15 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="x4P-6b-bGW" secondAttribute="trailing" id="9xU-rz-F5s"/>
-                <constraint firstItem="GbA-6D-r2x" firstAttribute="top" secondItem="x4P-6b-bGW" secondAttribute="bottom" id="WQI-cN-6HM"/>
-                <constraint firstItem="x4P-6b-bGW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fUy-8b-34h"/>
-                <constraint firstItem="x4P-6b-bGW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="iG0-mG-Bho"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="GbA-6D-r2x" secondAttribute="bottom" id="jyU-B1-125"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GbA-6D-r2x" secondAttribute="trailing" id="lIo-Fs-5Oq"/>
-                <constraint firstItem="GbA-6D-r2x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tvC-eP-1Vr"/>
+                <constraint firstItem="GbA-6D-r2x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="134" id="C1E-cG-JQW"/>
+                <constraint firstItem="GbA-6D-r2x" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="8" id="CYU-Wf-Qqi"/>
+                <constraint firstItem="GbA-6D-r2x" firstAttribute="top" secondItem="x4P-6b-bGW" secondAttribute="bottom" constant="8" symbolic="YES" id="FkF-Nw-Cmd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="x4P-6b-bGW" secondAttribute="trailing" id="jbY-FV-q8X"/>
+                <constraint firstItem="x4P-6b-bGW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nwM-SI-nAP"/>
+                <constraint firstItem="x4P-6b-bGW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="509" id="tJx-XT-wjv"/>
+                <constraint firstItem="GbA-6D-r2x" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="214" id="wbU-hq-9BG"/>
             </constraints>
-            <point key="canvasLocation" x="78.75" y="113"/>
+            <point key="canvasLocation" x="78" y="113"/>
         </view>
     </objects>
     <resources>

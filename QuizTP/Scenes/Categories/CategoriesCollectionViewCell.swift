@@ -9,14 +9,25 @@ import UIKit
 
 class CategoriesCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var categorieLabel: UILabel!
+    
+    //@IBOutlet weak var categorieLabel: UILabel!
+    @IBOutlet weak var customCategorieView: CustomCategorieView!
+    
+    let focusedColor = UIColor.init(red: 0, green: 80/255, blue: 157/255, alpha: 0.6)
+    let cellColor = UIColor.init(red: 0, green: 80/255, blue: 157/255, alpha: 1)
+    
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+        print("focused")
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        //0, 80, 157
-        self.backgroundColor = .init(red: 0, green: 80/255, blue: 157/255, alpha: 1)
-        //255, 213, 0
-        self.categorieLabel.textColor = .init(red: 1, green: 213/255, blue: 0, alpha: 1)
     }
+    
+    func configureCell(imageView:UIImageView,customText:String){
+        customCategorieView.image = imageView
+        customCategorieView.text =  customText
+    }
+
 
 }
