@@ -17,8 +17,6 @@ public class CustomCategorieView:UIView{
        
         guard let imageView = self.image else {return}
         
-      
-        
         let labelText = UILabel()
         labelText.text = self.text
         labelText.textAlignment = .center

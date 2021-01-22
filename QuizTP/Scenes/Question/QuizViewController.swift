@@ -16,6 +16,15 @@ class QuizViewController: UIViewController {
     var goodAnswer:String?
     var theme:String!
     
+    private struct const {
+        static let cellBackgroundColor = UIColor.init(red: 0, green: 63/255, blue: 136/255, alpha: 1)
+        static let questionTransitionDuration:TimeInterval = 2
+        static let answerTransitionDuration:TimeInterval = 1
+        static let neededRowCellNumber:CGFloat = 2
+        static let neededColumnCellNumber:CGFloat = 2
+        static let cellPadding:CGFloat = 10
+    }
+    
     
     static func newInstance(selectedTheme: String) -> QuizViewController {
         let viewController = QuizViewController()
@@ -26,7 +35,7 @@ class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //0, 63, 136
-        self.collectionAnswerView.backgroundColor = .init(red: 0, green: 63/255, blue: 136/255, alpha: 1)
+        self.collectionAnswerView.backgroundColor = const.cellBackgroundColor
         self.collectionAnswerView.register(UINib(nibName: "AnswerCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "answerCell")
         self.collectionAnswerView.delegate = self
         self.collectionAnswerView.dataSource = self
@@ -41,15 +50,15 @@ class QuizViewController: UIViewController {
         self.goodAnswer = question.reponse
         
         UIView.transition(with: self.questionLabel,
-                      duration: 2,
-                       options: .transitionCrossDissolve,
-                    animations: {
-                        self.collectionAnswerView.isUserInteractionEnabled = false
-                        self.questionLabel.text = question.question
-                 }, completion: nil)
+                          duration: const.questionTransitionDuration,
+                          options: .transitionCrossDissolve,
+                          animations: {
+                            self.collectionAnswerView.isUserInteractionEnabled = false
+                            self.questionLabel.text = question.question
+                          }, completion: nil)
         
         UIView.transition(with: self.collectionAnswerView,
-                          duration: 1,
+                          duration: const.answerTransitionDuration,
                           options: .transitionCrossDissolve,
                           animations: {
                             self.collectionAnswerView.reloadData()
@@ -65,7 +74,6 @@ class QuizViewController: UIViewController {
             }
         }
     }
-    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         requestQuestion()
@@ -74,20 +82,14 @@ class QuizViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
-    
-    @IBAction func requester(_ sender: Any) {
-        //task.cancel()
-        //task.resume()
-    }
 }
 
 extension QuizViewController:UICollectionViewDelegate{
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(answerTable[indexPath.row])
         if let goodAnswer = goodAnswer {
             if answerTable[indexPath.row] == goodAnswer {
-                print("BONNE REPONSE !!!")
+                print("BONNE REPONSE")
                 requestQuestion()
             }
         }
@@ -110,9 +112,8 @@ extension QuizViewController:UICollectionViewDataSource{
 
 
 extension QuizViewController:UICollectionViewDelegateFlowLayout{
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.collectionAnswerView.bounds.width/2 - 10, height: self.collectionAnswerView.bounds.height/2 - 10)
+        return CGSize(width: self.collectionAnswerView.bounds.width/const.neededRowCellNumber - const.cellPadding, height: self.collectionAnswerView.bounds.height/const.neededColumnCellNumber - const.cellPadding)
     }
 }
 

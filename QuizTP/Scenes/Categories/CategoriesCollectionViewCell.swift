@@ -13,9 +13,6 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
     //@IBOutlet weak var categorieLabel: UILabel!
     @IBOutlet weak var customCategorieView: CustomCategorieView!
     
-    let focusedColor = UIColor.init(red: 0, green: 80/255, blue: 157/255, alpha: 0.6)
-    let cellColor = UIColor.init(red: 0, green: 80/255, blue: 157/255, alpha: 1)
-    
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         print("focused")
     }

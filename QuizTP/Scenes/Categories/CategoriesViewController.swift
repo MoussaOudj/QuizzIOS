@@ -8,14 +8,33 @@
 import UIKit
 
 class CategoriesViewController: UIViewController {
-
+    
     @IBOutlet weak var categoriesCollectionView: UICollectionView!
-    let categoriesTable:[(categorie:String,image:String)] = [("cinema","image-cine"), ("culture","image-culture"), ("informatique","image-informatique"), ("loisirs","image-loisirs"), ("sciences","image-sciences"), ("television","image-television"), ("arts","image-arts"), ("musique","image-musique")]
+    
+    let categoriesTable:[(categorie:String,image:String)] = [("cinema","image-cine"),
+                                                             ("culture","image-culture"),
+                                                             ("informatique","image-informatique"),
+                                                             ("loisirs","image-loisirs"),
+                                                             ("sciences","image-sciences"),
+                                                             ("television","image-television"),
+                                                             ("arts","image-arts"),
+                                                             ("musique","image-musique")]
+    
+    private struct const {
+        static let collectionBackgroundColor = UIColor .init(red: 0, green: 63/255, blue: 136/255, alpha: 1)
+        static let neededMACOSRowCellNumber:CGFloat = 4
+        static let neededMACOSColumnCellNumber:CGFloat = 2
+        static let neededTVOSRowCellNumber:CGFloat = 3
+        static let neededTVOSColumnCellNumber:CGFloat = 3
+        static let neededRowCellNumber:CGFloat = 2
+        static let neededColumnCellNumber:CGFloat = 4
+
+        static let cellPadding:CGFloat = 10
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //0, 63, 136
-        self.categoriesCollectionView.backgroundColor = .init(red: 0, green: 63/255, blue: 136/255, alpha: 1)
+        self.categoriesCollectionView.backgroundColor = const.collectionBackgroundColor
         self.categoriesCollectionView.register(UINib(nibName: "CategoriesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "categorieCell")
         self.categoriesCollectionView.delegate = self
         self.categoriesCollectionView.dataSource = self
@@ -49,11 +68,13 @@ extension CategoriesViewController:UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         #if os(tvOS)
-        return CGSize(width: self.categoriesCollectionView.bounds.width/4, height: self.categoriesCollectionView.bounds.height/4 )
+        return CGSize(width: self.categoriesCollectionView.bounds.width/const.neededTVOSRowCellNumber, height: self.categoriesCollectionView.bounds.height/const.neededTVOSColumnCellNumber )
         #elseif targetEnvironment(macCatalyst)
-        return CGSize(width: self.categoriesCollectionView.bounds.width/4 - 10, height: self.categoriesCollectionView.bounds.height/2 - 10 )
+        return CGSize(width: self.categoriesCollectionView.bounds.width/const.neededMACOSRowCellNumber - const.cellPadding, height: self.categoriesCollectionView.bounds.height/const.neededMACOSColumnCellNumber - const.cellPadding )
+        #else
+        return CGSize(width: self.categoriesCollectionView.bounds.width/const.neededRowCellNumber - const.cellPadding, height: self.categoriesCollectionView.bounds.height/const.neededColumnCellNumber - const.cellPadding )
         #endif
-        return CGSize(width: self.categoriesCollectionView.bounds.width/2 - 10, height: self.categoriesCollectionView.bounds.height/4 - 10 )
+        
     }
     
     #if os(tvOS)
