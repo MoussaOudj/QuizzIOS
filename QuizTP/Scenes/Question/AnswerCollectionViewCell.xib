@@ -36,7 +36,7 @@
             <connections>
                 <outlet property="answer" destination="rZd-bw-8jK" id="b1T-uc-1iK"/>
             </connections>
-            <point key="canvasLocation" x="150" y="50.892857142857139"/>
+            <point key="canvasLocation" x="150" y="50.555555555555557"/>
         </collectionViewCell>
     </objects>
 </document>

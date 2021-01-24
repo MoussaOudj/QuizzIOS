@@ -39,7 +39,7 @@
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="0.0" green="0.24733333330000001" blue="0.53000000000000003" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.029776219279999998" green="0.31711101530000002" blue="0.60002934929999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="BUU-lL-KwV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="MjT-jj-Luf"/>
                 <constraint firstItem="8IP-tz-G1Q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ahF-mG-02P"/>
@@ -54,7 +54,7 @@
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.15686274509803921" green="0.80392156862745101" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

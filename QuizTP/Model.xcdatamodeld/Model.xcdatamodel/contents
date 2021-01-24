@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="GeographicalQuiz" representedClassName="GeographicalQuiz" syncable="YES" codeGenerationType="category">
+    <entity name="GeographicalQuestions" representedClassName="GeographicalQuestions" syncable="YES" codeGenerationType="category">
         <attribute name="answerA" optional="YES" attributeType="String"/>
         <attribute name="answerB" optional="YES" attributeType="String"/>
         <attribute name="answerC" optional="YES" attributeType="String"/>
         <attribute name="answerD" optional="YES" attributeType="String"/>
-        <attribute name="question" optional="YES" attributeType="String"/>
-        <attribute name="quizName" optional="YES" attributeType="String"/>
+        <attribute name="countryCode" optional="YES" attributeType="String"/>
+        <attribute name="questionCategory" optional="YES" attributeType="String"/>
         <attribute name="rightAnswer" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="GeographicalQuiz" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="GeographicalQuestions" positionX="-63" positionY="-18" width="128" height="148"/>
     </elements>
 </model>
