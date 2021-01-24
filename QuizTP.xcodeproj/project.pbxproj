@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E5343F725BDAD32008EA819 /* GeographicalQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5343F525BDAD32008EA819 /* GeographicalQuizViewController.swift */; };
+		0E5343F825BDAD32008EA819 /* GeographicalQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E5343F625BDAD32008EA819 /* GeographicalQuizViewController.xib */; };
+		0E53440425BDAE3E008EA819 /* GeographicalQuiz+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E53440225BDAE3E008EA819 /* GeographicalQuiz+CoreDataClass.swift */; };
+		0E83876725BB4FBF0067969A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E83876525BB4FBF0067969A /* Model.xcdatamodeld */; };
 		8F19035D259BA87400848916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F19035B259BA87400848916 /* LaunchScreen.storyboard */; };
 		8F19036F259BA8B900848916 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D7592598D8D500B38608 /* HomeViewController.swift */; };
 		8F190378259BA8CE00848916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D7062598D76A00B38608 /* AppDelegate.swift */; };
@@ -63,6 +67,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E5343F525BDAD32008EA819 /* GeographicalQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeographicalQuizViewController.swift; sourceTree = "<group>"; };
+		0E5343F625BDAD32008EA819 /* GeographicalQuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeographicalQuizViewController.xib; sourceTree = "<group>"; };
+		0E53440225BDAE3E008EA819 /* GeographicalQuiz+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeographicalQuiz+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0E83876625BB4FBF0067969A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		8F190350259BA87300848916 /* QuizTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F190359259BA87400848916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F19035C259BA87400848916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -132,6 +140,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E53440125BDADF7008EA819 /* CodeDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				0E53440225BDAE3E008EA819 /* GeographicalQuiz+CoreDataClass.swift */,
+			);
+			path = CodeDataModels;
+			sourceTree = "<group>";
+		};
 		8F190351259BA87300848916 /* QuizTV */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,12 +230,14 @@
 			children = (
 				8F9ABBA5259A6D0100312F92 /* QuizTP.entitlements */,
 				8F66D7562598D8A400B38608 /* Plateforms */,
+				0E53440125BDADF7008EA819 /* CodeDataModels */,
 				8F66D7532598D89200B38608 /* Domain */,
 				8F66D74F2598D87000B38608 /* Scenes */,
 				8F66D7062598D76A00B38608 /* AppDelegate.swift */,
 				8F66D70F2598D76B00B38608 /* Assets.xcassets */,
 				8F66D7112598D76B00B38608 /* LaunchScreen.storyboard */,
 				8F66D7142598D76B00B38608 /* Info.plist */,
+				0E83876525BB4FBF0067969A /* Model.xcdatamodeld */,
 			);
 			path = QuizTP;
 			sourceTree = "<group>";
@@ -280,6 +298,8 @@
 				8F66D76D2598D90400B38608 /* AnswerCollectionViewCell.xib */,
 				8F66D76E2598D90400B38608 /* QuizViewController.swift */,
 				8F66D76C2598D90400B38608 /* QuizViewController.xib */,
+				0E5343F525BDAD32008EA819 /* GeographicalQuizViewController.swift */,
+				0E5343F625BDAD32008EA819 /* GeographicalQuizViewController.xib */,
 			);
 			path = Question;
 			sourceTree = "<group>";
@@ -476,6 +496,7 @@
 				8F66D78D2598DA6900B38608 /* CategoriesViewController.xib in Resources */,
 				8F66D7102598D76B00B38608 /* Assets.xcassets in Resources */,
 				8F66D7972598DB0200B38608 /* CategoriesCollectionViewCell.xib in Resources */,
+				0E5343F825BDAD32008EA819 /* GeographicalQuizViewController.xib in Resources */,
 				8F66D7712598D90400B38608 /* AnswerCollectionViewCell.xib in Resources */,
 				8F66D75C2598D8D500B38608 /* HomeViewController.xib in Resources */,
 			);
@@ -520,7 +541,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F66D76F2598D90400B38608 /* AnswerCollectionViewCell.swift in Sources */,
+				0E5343F725BDAD32008EA819 /* GeographicalQuizViewController.swift in Sources */,
 				8F66D79C2598DCD500B38608 /* QuestionService.swift in Sources */,
+				0E53440425BDAE3E008EA819 /* GeographicalQuiz+CoreDataClass.swift in Sources */,
 				8F66D7962598DB0200B38608 /* CategoriesCollectionViewCell.swift in Sources */,
 				8F66D7A12598DD2D00B38608 /* HttpQuestionService.swift in Sources */,
 				8F66D7072598D76A00B38608 /* AppDelegate.swift in Sources */,
@@ -528,6 +551,7 @@
 				8F66D7772598D91D00B38608 /* Question.swift in Sources */,
 				8F66D78C2598DA6900B38608 /* CategoriesViewController.swift in Sources */,
 				8F66D7722598D90400B38608 /* QuizViewController.swift in Sources */,
+				0E83876725BB4FBF0067969A /* Model.xcdatamodeld in Sources */,
 				8F6230CE259F47BA00B5ED2A /* CustomCategorieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -916,6 +940,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0E83876525BB4FBF0067969A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0E83876625BB4FBF0067969A /* Model.xcdatamodel */,
+			);
+			currentVersion = 0E83876625BB4FBF0067969A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8F66D6FB2598D76A00B38608 /* Project object */;
 }
