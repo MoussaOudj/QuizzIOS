@@ -6,12 +6,12 @@
 //
 
 import UIKit
+import MapKit
 
 class GeographicalQuizViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
 }

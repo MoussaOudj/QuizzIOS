@@ -140,6 +140,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E04FC3425BDB542003F0E49 /* GeographicalQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				0E5343F525BDAD32008EA819 /* GeographicalQuizViewController.swift */,
+				0E5343F625BDAD32008EA819 /* GeographicalQuizViewController.xib */,
+			);
+			path = GeographicalQuiz;
+			sourceTree = "<group>";
+		};
 		0E53440125BDADF7008EA819 /* CodeDataModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +272,7 @@
 		8F66D74F2598D87000B38608 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0E04FC3425BDB542003F0E49 /* GeographicalQuiz */,
 				8F66D7522598D88100B38608 /* Question */,
 				8F66D7512598D87A00B38608 /* Categories */,
 				8F66D7502598D87600B38608 /* Home */,
@@ -298,8 +308,6 @@
 				8F66D76D2598D90400B38608 /* AnswerCollectionViewCell.xib */,
 				8F66D76E2598D90400B38608 /* QuizViewController.swift */,
 				8F66D76C2598D90400B38608 /* QuizViewController.xib */,
-				0E5343F525BDAD32008EA819 /* GeographicalQuizViewController.swift */,
-				0E5343F625BDAD32008EA819 /* GeographicalQuizViewController.xib */,
 			);
 			path = Question;
 			sourceTree = "<group>";

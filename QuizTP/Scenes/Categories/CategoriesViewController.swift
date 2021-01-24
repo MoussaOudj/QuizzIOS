@@ -11,14 +11,16 @@ class CategoriesViewController: UIViewController {
     
     @IBOutlet weak var categoriesCollectionView: UICollectionView!
     
-    let categoriesTable:[(categorie:String,image:String)] = [("cinema","image-cine"),
-                                                             ("culture","image-culture"),
-                                                             ("informatique","image-informatique"),
-                                                             ("loisirs","image-loisirs"),
-                                                             ("sciences","image-sciences"),
-                                                             ("television","image-television"),
-                                                             ("arts","image-arts"),
-                                                             ("musique","image-musique")]
+    let categoriesTable:[(categorie:String,image:String)] = [
+        ("Cinéma","image-cine"),
+        ("Culture","image-culture"),
+        ("Informatique","image-informatique"),
+        ("Loisirs","image-loisirs"),
+        ("Sciences","image-sciences"),
+        ("Télévision","image-television"),
+        ("Arts","image-arts"),
+        ("Musique","image-musique"),
+        ("Géographie","image-geographie")]
     
     private struct const {
         static let collectionBackgroundColor = UIColor .init(red: 0, green: 63/255, blue: 136/255, alpha: 1)
@@ -44,7 +46,12 @@ class CategoriesViewController: UIViewController {
 extension CategoriesViewController:UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let createQuizz = QuizViewController.newInstance(selectedTheme: categoriesTable[indexPath.row].categorie)
-        self.navigationController?.pushViewController(createQuizz, animated: true)
+        
+        if (categoriesTable[indexPath.row].categorie == "Géographie") {
+            self.navigationController?.pushViewController(GeographicalQuizViewController(), animated: true)
+        } else {
+            self.navigationController?.pushViewController(createQuizz, animated: true)
+        }
     }
     
 }
