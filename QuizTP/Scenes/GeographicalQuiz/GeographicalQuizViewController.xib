@@ -19,28 +19,28 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FXL-Kd-A2e">
+                    <rect key="frame" x="7" y="68" width="400" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="L5P-8K-Prn"/>
+                    </constraints>
+                </mapView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quel est ce pays ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qg-3O-9qo">
-                    <rect key="frame" x="45" y="336" width="324" height="28"/>
+                    <rect key="frame" x="79" y="335" width="252.5" height="28"/>
                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FXL-Kd-A2e">
-                    <rect key="frame" x="7" y="68" width="400" height="250"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="250" id="FV1-Ba-UpZ"/>
-                    </constraints>
-                </mapView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.029776219279999998" green="0.31711101530000002" blue="0.60002934929999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="0Qg-3O-9qo" firstAttribute="top" secondItem="FXL-Kd-A2e" secondAttribute="bottom" constant="18" id="Iha-FQ-ZMM"/>
-                <constraint firstItem="FXL-Kd-A2e" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="U9U-I6-GmH"/>
-                <constraint firstItem="FXL-Kd-A2e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="7" id="gbN-gL-IPe"/>
-                <constraint firstItem="0Qg-3O-9qo" firstAttribute="centerX" secondItem="FXL-Kd-A2e" secondAttribute="centerX" id="lgA-0s-3JG"/>
-                <constraint firstItem="0Qg-3O-9qo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="45" id="n7U-Vq-8wV"/>
-                <constraint firstItem="FXL-Kd-A2e" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="t4w-AR-xxI"/>
+                <constraint firstItem="0Qg-3O-9qo" firstAttribute="top" secondItem="FXL-Kd-A2e" secondAttribute="bottom" constant="17" id="6is-d1-84q"/>
+                <constraint firstItem="FXL-Kd-A2e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="7" id="Pmg-Gw-uOT"/>
+                <constraint firstItem="0Qg-3O-9qo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="79" id="UVw-3g-ZrY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0Qg-3O-9qo" secondAttribute="trailing" constant="82.5" id="em2-tc-Rw9"/>
+                <constraint firstItem="FXL-Kd-A2e" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="qJJ-VC-Okl"/>
+                <constraint firstItem="FXL-Kd-A2e" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zP7-FO-doK"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="84.375"/>
         </view>
