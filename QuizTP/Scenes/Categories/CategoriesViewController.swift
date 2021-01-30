@@ -12,14 +12,14 @@ class CategoriesViewController: UIViewController {
     @IBOutlet weak var categoriesCollectionView: UICollectionView!
     
     let categoriesTable:[(categorie:String,image:String)] = [
-        ("Cinéma","image-cine"),
-        ("Culture","image-culture"),
-        ("Informatique","image-informatique"),
-        ("Loisirs","image-loisirs"),
-        ("Sciences","image-sciences"),
-        ("Télévision","image-television"),
-        ("Arts","image-arts"),
-        ("Musique","image-musique"),
+        ("cinema","image-cine"),
+        ("culture","image-culture"),
+        ("informatique","image-informatique"),
+        ("loisirs","image-loisirs"),
+        ("sciences","image-sciences"),
+        ("television","image-television"),
+        ("arts","image-arts"),
+        ("musique","image-musique"),
         ("Géographie","image-geographie")]
     
     private struct const {
