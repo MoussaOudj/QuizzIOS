@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E07FEB125C604BC00A00F64 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D78A2598DA6900B38608 /* CategoriesViewController.swift */; };
+		0E07FEB625C604C000A00F64 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D78A2598DA6900B38608 /* CategoriesViewController.swift */; };
 		0E5343F725BDAD32008EA819 /* GeographicalQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5343F525BDAD32008EA819 /* GeographicalQuizViewController.swift */; };
 		0E5343F825BDAD32008EA819 /* GeographicalQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E5343F625BDAD32008EA819 /* GeographicalQuizViewController.xib */; };
 		0E83876725BB4FBF0067969A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E83876525BB4FBF0067969A /* Model.xcdatamodeld */; };
@@ -15,7 +17,6 @@
 		8F19035D259BA87400848916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F19035B259BA87400848916 /* LaunchScreen.storyboard */; };
 		8F19036F259BA8B900848916 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D7592598D8D500B38608 /* HomeViewController.swift */; };
 		8F190378259BA8CE00848916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D7062598D76A00B38608 /* AppDelegate.swift */; };
-		8F62305A259F343A00B5ED2A /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D78A2598DA6900B38608 /* CategoriesViewController.swift */; };
 		8F62305F259F344D00B5ED2A /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D7942598DB0200B38608 /* CategoriesCollectionViewCell.swift */; };
 		8F623064259F345100B5ED2A /* AnswerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D76B2598D90400B38608 /* AnswerCollectionViewCell.swift */; };
 		8F623069259F345400B5ED2A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D76E2598D90400B38608 /* QuizViewController.swift */; };
@@ -42,7 +43,6 @@
 		8F66D7712598D90400B38608 /* AnswerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F66D76D2598D90400B38608 /* AnswerCollectionViewCell.xib */; };
 		8F66D7722598D90400B38608 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D76E2598D90400B38608 /* QuizViewController.swift */; };
 		8F66D7772598D91D00B38608 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D7762598D91D00B38608 /* Question.swift */; };
-		8F66D78C2598DA6900B38608 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D78A2598DA6900B38608 /* CategoriesViewController.swift */; };
 		8F66D78D2598DA6900B38608 /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F66D78B2598DA6900B38608 /* CategoriesViewController.xib */; };
 		8F66D7962598DB0200B38608 /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D7942598DB0200B38608 /* CategoriesCollectionViewCell.swift */; };
 		8F66D7972598DB0200B38608 /* CategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F66D7952598DB0200B38608 /* CategoriesCollectionViewCell.xib */; };
@@ -554,11 +554,11 @@
 				8F623073259F345E00B5ED2A /* QuestionService.swift in Sources */,
 				8F190378259BA8CE00848916 /* AppDelegate.swift in Sources */,
 				8F623078259F346000B5ED2A /* Question.swift in Sources */,
+				0E07FEB625C604C000A00F64 /* CategoriesViewController.swift in Sources */,
 				8F19036F259BA8B900848916 /* HomeViewController.swift in Sources */,
 				8F623069259F345400B5ED2A /* QuizViewController.swift in Sources */,
 				8F62305F259F344D00B5ED2A /* CategoriesCollectionViewCell.swift in Sources */,
 				8F62306E259F345B00B5ED2A /* HttpQuestionService.swift in Sources */,
-				8F62305A259F343A00B5ED2A /* CategoriesViewController.swift in Sources */,
 				8F6230E1259F4BDC00B5ED2A /* CustomCategorieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,9 +577,9 @@
 				8F66D75B2598D8D500B38608 /* HomeViewController.swift in Sources */,
 				8F66D7772598D91D00B38608 /* Question.swift in Sources */,
 				0EA3F7AE25BDCFFE00089C89 /* GeographicalQuestions+CoreDataClass.swift in Sources */,
-				8F66D78C2598DA6900B38608 /* CategoriesViewController.swift in Sources */,
 				8F66D7722598D90400B38608 /* QuizViewController.swift in Sources */,
 				0E83876725BB4FBF0067969A /* Model.xcdatamodeld in Sources */,
+				0E07FEB125C604BC00A00F64 /* CategoriesViewController.swift in Sources */,
 				8F6230CE259F47BA00B5ED2A /* CustomCategorieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
