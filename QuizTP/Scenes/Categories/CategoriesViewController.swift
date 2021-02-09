@@ -48,7 +48,7 @@ extension CategoriesViewController:UICollectionViewDelegate{
         let createQuizz = QuizViewController.newInstance(selectedTheme: categoriesTable[indexPath.row].categorie)
         
         if (categoriesTable[indexPath.row].categorie == "Géographie") {
-            self.navigationController?.pushViewController(GeographicalQuizViewController(), animated: true)
+            self.navigationController?.pushViewController(GeographicalQuizMenuViewController(), animated: true)
         } else {
             self.navigationController?.pushViewController(createQuizz, animated: true)
         }
@@ -59,7 +59,6 @@ extension CategoriesViewController:UICollectionViewDelegate{
 extension CategoriesViewController:UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return categoriesTable.count
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
