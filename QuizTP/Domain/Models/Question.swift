@@ -25,12 +25,14 @@ public class Question {
     
     var question:String
     var reponse:String
+    var anecdote:String
     var choix:[String]
     
-    init(question:String,reponse:String,choix:[String]) {
+    init(question:String,reponse:String,choix:[String],anecdote:String) {
         self.question = question
         self.reponse = reponse
         self.choix = choix
-    }
+        self.anecdote = anecdote
+    } 
     
 }

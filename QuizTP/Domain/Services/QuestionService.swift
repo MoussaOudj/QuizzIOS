@@ -7,5 +7,5 @@
 
 import Foundation
 protocol QuestionService {
-    func getQuestionFor(categorie:String, completionHandler: @escaping (_ result: Question) -> Void)
+    func getQuestionFor(categorie:String, completionHandler: @escaping (_ result: Question?) -> Void)
 }
