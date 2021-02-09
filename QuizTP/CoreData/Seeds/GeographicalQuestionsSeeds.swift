@@ -18,7 +18,7 @@ public class DataHelper {
     
     let questions = [
         (questionCategory: "AFRIQUE",
-         countryCode: "DZ",
+         countryCode: "DZA",
          answerA: "Côte d'Ivoire",
          answerB: "Ethiopie",
          answerC: "Algérie",
@@ -26,12 +26,76 @@ public class DataHelper {
          rightAnswer: "Algérie"),
         
         (questionCategory: "AFRIQUE",
-         countryCode: "AO",
+         countryCode: "AGO",
          answerA: "Angola",
          answerB: "Botswana",
          answerC: "Somalie",
          answerD: "Tunisie",
-         rightAnswer: "Angola")
+         rightAnswer: "Angola"),
+        
+        (questionCategory: "AFRIQUE",
+         countryCode: "MAR",
+         answerA: "Tunisie",
+         answerB: "Mauritanie",
+         answerC: "Madagascar",
+         answerD: "Maroc",
+         rightAnswer: "Maroc"),
+        
+        (questionCategory: "AFRIQUE",
+         countryCode: "EGY",
+         answerA: "Algerie",
+         answerB: "Egypte",
+         answerC: "Afrique du Sud",
+         answerD: "Sénégal",
+         rightAnswer: "Egypte"),
+        
+        (questionCategory: "AFRIQUE",
+         countryCode: "ZAF",
+         answerA: "Afrique du Sud",
+         answerB: "Mozambique",
+         answerC: "Botswana",
+         answerD: "Namibie",
+         rightAnswer: "Afrique du Sud"),
+        
+        (questionCategory: "EUROPE",
+         countryCode: "BEL",
+         answerA: "Finlande",
+         answerB: "Pays-Bas",
+         answerC: "Belgique",
+         answerD: "Allemagne",
+         rightAnswer: "Belgique"),
+        
+        (questionCategory: "EUROPE",
+         countryCode: "AUT",
+         answerA: "Allemagne",
+         answerB: "Italie",
+         answerC: "Luxembourd",
+         answerD: "Autriche",
+         rightAnswer: "Autriche"),
+        
+        (questionCategory: "EUROPE",
+         countryCode: "HRV",
+         answerA: "Croatie",
+         answerB: "Lituanie",
+         answerC: "Hongrie",
+         answerD: "Roumanie",
+         rightAnswer: "Croatie"),
+        
+        (questionCategory: "EUROPE",
+         countryCode: "GRC",
+         answerA: "Bulgarie",
+         answerB: "Kosovo",
+         answerC: "Croatie",
+         answerD: "Grèce",
+         rightAnswer: "Grèce"),
+        
+        (questionCategory: "EUROPE",
+         countryCode: "SWE",
+         answerA: "Norvège",
+         answerB: "Suède",
+         answerC: "Finlande",
+         answerD: "Danemark",
+         rightAnswer: "Suède"),
     ]
     
     private func cleanGeographicalQuestionsEntity() {

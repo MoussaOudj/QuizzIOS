@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0E02120F25D14E71003CC3BD /* check.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E02120E25D14E71003CC3BD /* check.json */; };
+		0E02121D25D2E3BA003CC3BD /* clap.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E02121C25D2E3BA003CC3BD /* clap.json */; };
+		0E02123225D2F349003CC3BD /* GeographicalQuizMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E02123025D2F349003CC3BD /* GeographicalQuizMenuViewController.swift */; };
+		0E02123325D2F349003CC3BD /* GeographicalQuizMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E02123125D2F349003CC3BD /* GeographicalQuizMenuViewController.xib */; };
 		0E07FEB125C604BC00A00F64 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D78A2598DA6900B38608 /* CategoriesViewController.swift */; };
 		0E07FEB625C604C000A00F64 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D78A2598DA6900B38608 /* CategoriesViewController.swift */; };
 		0E0C1A0725D143750065AB1D /* GeographicalQuizResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0C1A0525D143750065AB1D /* GeographicalQuizResultsViewController.swift */; };
@@ -18,6 +21,7 @@
 		0E83876725BB4FBF0067969A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E83876525BB4FBF0067969A /* Model.xcdatamodeld */; };
 		0EA3F79B25BDCED500089C89 /* GeographicalQuestionsSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3F79A25BDCED500089C89 /* GeographicalQuestionsSeeds.swift */; };
 		0EA3F7AE25BDCFFE00089C89 /* GeographicalQuestions+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3F7AC25BDCFFE00089C89 /* GeographicalQuestions+CoreDataClass.swift */; };
+		0EB4491725D2FAA200DCDB41 /* world.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EB4491625D2FAA200DCDB41 /* world.json */; };
 		3BCF60AFB0A0D377E53E7C03 /* Pods_QuizTPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B907539F2057CD1B326B62E5 /* Pods_QuizTPTests.framework */; };
 		3DDCAF63FC5DD4843E4FD86F /* Pods_QuizTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BFAD0D370E9D1062BEA346 /* Pods_QuizTP.framework */; };
 		80934E109FDAA0A77F9DE310 /* Pods_QuizTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430FD31F9131D52CA8F57321 /* Pods_QuizTV.framework */; };
@@ -77,6 +81,9 @@
 
 /* Begin PBXFileReference section */
 		0E02120E25D14E71003CC3BD /* check.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = check.json; sourceTree = "<group>"; };
+		0E02121C25D2E3BA003CC3BD /* clap.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clap.json; sourceTree = "<group>"; };
+		0E02123025D2F349003CC3BD /* GeographicalQuizMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeographicalQuizMenuViewController.swift; sourceTree = "<group>"; };
+		0E02123125D2F349003CC3BD /* GeographicalQuizMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeographicalQuizMenuViewController.xib; sourceTree = "<group>"; };
 		0E0C1A0525D143750065AB1D /* GeographicalQuizResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeographicalQuizResultsViewController.swift; sourceTree = "<group>"; };
 		0E0C1A0625D143750065AB1D /* GeographicalQuizResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeographicalQuizResultsViewController.xib; sourceTree = "<group>"; };
 		0E0C1A0D25D1483A0065AB1D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
@@ -85,6 +92,7 @@
 		0E83876625BB4FBF0067969A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		0EA3F79A25BDCED500089C89 /* GeographicalQuestionsSeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeographicalQuestionsSeeds.swift; sourceTree = "<group>"; };
 		0EA3F7AC25BDCFFE00089C89 /* GeographicalQuestions+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeographicalQuestions+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0EB4491625D2FAA200DCDB41 /* world.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = world.json; sourceTree = "<group>"; };
 		1773EFC2F313EC0B28127222 /* Pods-QuizTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizTP.release.xcconfig"; path = "Target Support Files/Pods-QuizTP/Pods-QuizTP.release.xcconfig"; sourceTree = "<group>"; };
 		2635DCD7A82A9EBC9BD897A6 /* Pods_QuizTP_QuizTPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizTP_QuizTPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FECC982EA2AC7F9389FA039 /* Pods-QuizTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizTP.debug.xcconfig"; path = "Target Support Files/Pods-QuizTP/Pods-QuizTP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +185,8 @@
 				0E5343F625BDAD32008EA819 /* GeographicalQuizViewController.xib */,
 				0E0C1A0525D143750065AB1D /* GeographicalQuizResultsViewController.swift */,
 				0E0C1A0625D143750065AB1D /* GeographicalQuizResultsViewController.xib */,
+				0E02123025D2F349003CC3BD /* GeographicalQuizMenuViewController.swift */,
+				0E02123125D2F349003CC3BD /* GeographicalQuizMenuViewController.xib */,
 			);
 			path = GeographicalQuiz;
 			sourceTree = "<group>";
@@ -315,6 +325,8 @@
 		8F66D7052598D76A00B38608 /* QuizTP */ = {
 			isa = PBXGroup;
 			children = (
+				0EB4491625D2FAA200DCDB41 /* world.json */,
+				0E02121C25D2E3BA003CC3BD /* clap.json */,
 				8F9ABBA5259A6D0100312F92 /* QuizTP.entitlements */,
 				8F66D7562598D8A400B38608 /* Plateforms */,
 				0E53440125BDADF7008EA819 /* CoreData */,
@@ -586,15 +598,18 @@
 			files = (
 				0E02120F25D14E71003CC3BD /* check.json in Resources */,
 				0E0C1A0E25D1483A0065AB1D /* Podfile in Resources */,
+				0E02121D25D2E3BA003CC3BD /* clap.json in Resources */,
 				0E0C1A0825D143750065AB1D /* GeographicalQuizResultsViewController.xib in Resources */,
 				8F66D7132598D76B00B38608 /* LaunchScreen.storyboard in Resources */,
 				8F66D7702598D90400B38608 /* QuizViewController.xib in Resources */,
 				8F66D78D2598DA6900B38608 /* CategoriesViewController.xib in Resources */,
 				8F66D7102598D76B00B38608 /* Assets.xcassets in Resources */,
+				0EB4491725D2FAA200DCDB41 /* world.json in Resources */,
 				8F66D7972598DB0200B38608 /* CategoriesCollectionViewCell.xib in Resources */,
 				0E5343F825BDAD32008EA819 /* GeographicalQuizViewController.xib in Resources */,
 				8F66D7712598D90400B38608 /* AnswerCollectionViewCell.xib in Resources */,
 				8F66D75C2598D8D500B38608 /* HomeViewController.xib in Resources */,
+				0E02123325D2F349003CC3BD /* GeographicalQuizMenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +782,7 @@
 				8F66D7962598DB0200B38608 /* CategoriesCollectionViewCell.swift in Sources */,
 				8F66D7A12598DD2D00B38608 /* HttpQuestionService.swift in Sources */,
 				8F66D7072598D76A00B38608 /* AppDelegate.swift in Sources */,
+				0E02123225D2F349003CC3BD /* GeographicalQuizMenuViewController.swift in Sources */,
 				0EA3F79B25BDCED500089C89 /* GeographicalQuestionsSeeds.swift in Sources */,
 				8F66D75B2598D8D500B38608 /* HomeViewController.swift in Sources */,
 				8F66D7772598D91D00B38608 /* Question.swift in Sources */,

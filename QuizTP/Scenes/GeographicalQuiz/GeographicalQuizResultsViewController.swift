@@ -11,7 +11,10 @@ import Lottie
 
 class GeographicalQuizResultsViewController: UIViewController {
     @IBOutlet var checkAnimation: AnimationView!
-
+    @IBOutlet var quizScoreUiLabel: UILabel!
+    
+    var quizScore: Int = 0
+    
     override func viewDidLoad() {
 
       super.viewDidLoad()
@@ -20,9 +23,13 @@ class GeographicalQuizResultsViewController: UIViewController {
         
         checkAnimation.contentMode = .scaleAspectFit
         checkAnimation.loopMode = .loop
-        checkAnimation.animationSpeed = 0.5
+        checkAnimation.animationSpeed = 1
         checkAnimation.play()
+        
+        quizScoreUiLabel.text = String(quizScore)
     }
-
-
+    
+    @IBAction func goBackToQuizButton(_ sender: Any) {
+        self.navigationController?.pushViewController(CategoriesViewController(), animated: true)
+    }
 }

@@ -7,6 +7,7 @@
 
 import UIKit
 import MapKit
+import CoreData
 
 class GeographicalQuizViewController: UIViewController {
     
@@ -71,11 +72,13 @@ class GeographicalQuizViewController: UIViewController {
 
     fileprivate func setupQuiz() {
         do {
-            self.questions = try context.fetch(GeographicalQuestions.fetchRequest())
+            let quizRequest = GeographicalQuestions.fetchRequest() as NSFetchRequest<GeographicalQuestions>
+            let categoryFilter = NSPredicate(format: "questionCategory CONTAINS %@", "EUROPE")
+            quizRequest.predicate = categoryFilter
+            self.questions = try context.fetch(quizRequest)
         } catch {
-
+            print("SOMETHING FAILED")
         }
-
         DispatchQueue.main.async {
             if self.questions != nil  {
                 self.updateQuestion((self.questions?[self.quizCounter])!)
@@ -102,11 +105,17 @@ extension GeographicalQuizViewController:UICollectionViewDelegate {
             }
         }
         self.quizCounter += 1
+        
         if (self.quizCounter < questions!.count) {
             self.updateQuestion((self.questions?[self.quizCounter])!)
         }
         else {
-            self.navigationController?.pushViewController(GeographicalQuizResultsViewController(), animated: true)
+            let quizResultViewController = GeographicalQuizResultsViewController(nibName: "GeographicalQuizResultsViewController", bundle: nil)
+            
+            quizResultViewController.quizScore = self.quizScore
+
+            navigationController?.pushViewController(quizResultViewController, animated: true)
+
         }
     }
 

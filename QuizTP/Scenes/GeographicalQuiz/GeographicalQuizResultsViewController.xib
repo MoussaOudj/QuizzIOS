@@ -5,13 +5,13 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GeographicalQuizResultsViewController" customModule="QuizTP" customModuleProvider="target">
             <connections>
                 <outlet property="checkAnimation" destination="BnV-iG-3cX" id="iUE-rb-tK3"/>
+                <outlet property="quizScoreUiLabel" destination="1wT-Pw-9hE" id="2m8-BP-OeA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,32 +21,53 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BnV-iG-3cX" customClass="AnimationView" customModule="Lottie">
-                    <rect key="frame" x="93" y="384" width="240" height="0.0"/>
-                    <color key="backgroundColor" systemColor="labelColor"/>
+                    <rect key="frame" x="67" y="285" width="281" height="330"/>
+                    <color key="backgroundColor" red="0.029776219279999998" green="0.31711101530000002" blue="0.60002934929999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="check"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="clap"/>
                     </userDefinedRuntimeAttributes>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wT-Pw-9hE">
+                    <rect key="frame" x="103" y="184" width="209" height="72"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eI9-hH-35M">
+                    <rect key="frame" x="38" y="67" width="338" height="72"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3w5-p8-YlP">
+                    <rect key="frame" x="139" y="719" width="137" height="39"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <state key="normal" title="MENU QUIZ">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="goBackToQuizButton:" destination="-1" eventType="touchUpInside" id="rgL-Us-dpE"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.029776219279999998" green="0.31711101530000002" blue="0.60002934929999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BnV-iG-3cX" secondAttribute="trailing" constant="81" id="3bm-Hg-eTA"/>
-                <constraint firstItem="BnV-iG-3cX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="340" id="WQh-Sw-yDo"/>
-                <constraint firstItem="BnV-iG-3cX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="93" id="wcs-Aa-7zz"/>
+                <constraint firstItem="3w5-p8-YlP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="139" id="9H1-3B-gC3"/>
+                <constraint firstItem="1wT-Pw-9hE" firstAttribute="top" secondItem="eI9-hH-35M" secondAttribute="bottom" constant="45" id="KYd-n9-LsT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1wT-Pw-9hE" secondAttribute="trailing" constant="102" id="NTx-Vu-g4J"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BnV-iG-3cX" secondAttribute="trailing" constant="66" id="Of8-kz-XXE"/>
+                <constraint firstItem="3w5-p8-YlP" firstAttribute="top" secondItem="BnV-iG-3cX" secondAttribute="bottom" constant="104" id="Tqc-DM-YSC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eI9-hH-35M" secondAttribute="trailing" constant="38" id="Zvv-5M-wAN"/>
+                <constraint firstItem="eI9-hH-35M" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="23" id="ahE-rI-E3u"/>
+                <constraint firstItem="eI9-hH-35M" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="gfq-qb-VtE"/>
+                <constraint firstItem="BnV-iG-3cX" firstAttribute="top" secondItem="1wT-Pw-9hE" secondAttribute="bottom" constant="29" id="lSL-VI-y9K"/>
+                <constraint firstItem="1wT-Pw-9hE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="103" id="lia-le-mLn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="3w5-p8-YlP" secondAttribute="bottom" constant="104" id="mDL-hi-jbV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3w5-p8-YlP" secondAttribute="trailing" constant="138" id="nss-2t-3gi"/>
+                <constraint firstItem="BnV-iG-3cX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="67" id="t7X-Ab-iPx"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="62.946428571428569"/>
         </view>
     </objects>
-    <designables>
-        <designable name="BnV-iG-3cX"/>
-    </designables>
-    <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
