@@ -116,5 +116,3 @@ extension QuizViewController:UICollectionViewDelegateFlowLayout{
         return CGSize(width: self.collectionAnswerView.bounds.width/const.neededRowCellNumber - const.cellPadding, height: self.collectionAnswerView.bounds.height/const.neededColumnCellNumber - const.cellPadding)
     }
 }
-
-

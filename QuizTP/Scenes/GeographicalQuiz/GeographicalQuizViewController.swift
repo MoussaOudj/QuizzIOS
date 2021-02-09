@@ -16,6 +16,8 @@ class GeographicalQuizViewController: UIViewController {
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var questions: [GeographicalQuestions]?
     var goodAnswer: String?
+    var quizCounter: Int = 0
+    var quizScore: Int = 0
 
 
     override func viewDidLoad() {
@@ -36,7 +38,6 @@ class GeographicalQuizViewController: UIViewController {
         mapView.isScrollEnabled = false
         mapView.isUserInteractionEnabled = false
         mapView.mapType = .satellite
-        setMapCountry(mapCountry: "AL")
     }
     
     private func setMapCountry(mapCountry: String) {
@@ -54,9 +55,11 @@ class GeographicalQuizViewController: UIViewController {
         }
     }
     
-    fileprivate func updateQuestion(_ question:GeographicalQuestions) {
+    fileprivate func updateQuestion(_ question: GeographicalQuestions) {
         self.answerTable = [question.answerA,question.answerB, question.answerC, question.answerD]
-
+        self.goodAnswer = question.rightAnswer
+        setMapCountry(mapCountry: question.countryCode!)
+        
         UIView.transition(with: self.collectionAnswerView,
                           duration: 1,
                           options: .transitionCrossDissolve,
@@ -66,7 +69,7 @@ class GeographicalQuizViewController: UIViewController {
                           })
     }
 
-    fileprivate func requestQuestion() {
+    fileprivate func setupQuiz() {
         do {
             self.questions = try context.fetch(GeographicalQuestions.fetchRequest())
         } catch {
@@ -75,14 +78,14 @@ class GeographicalQuizViewController: UIViewController {
 
         DispatchQueue.main.async {
             if self.questions != nil  {
-                self.updateQuestion((self.questions?.first)!)
+                self.updateQuestion((self.questions?[self.quizCounter])!)
             }
         }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
-        requestQuestion()
+        setupQuiz()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -90,14 +93,20 @@ class GeographicalQuizViewController: UIViewController {
     }
 }
 
-extension GeographicalQuizViewController:UICollectionViewDelegate{
+extension GeographicalQuizViewController:UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(answerTable[indexPath.row])
         if let goodAnswer = goodAnswer {
             if answerTable[indexPath.row] == goodAnswer {
                 print("BONNE REPONSE")
-                requestQuestion()
+                quizScore += 1
             }
+        }
+        self.quizCounter += 1
+        if (self.quizCounter < questions!.count) {
+            self.updateQuestion((self.questions?[self.quizCounter])!)
+        }
+        else {
+            self.navigationController?.pushViewController(GeographicalQuizResultsViewController(), animated: true)
         }
     }
 
