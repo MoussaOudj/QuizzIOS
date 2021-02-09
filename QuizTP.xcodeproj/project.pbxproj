@@ -18,6 +18,7 @@
 		0E83876725BB4FBF0067969A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E83876525BB4FBF0067969A /* Model.xcdatamodeld */; };
 		0EA3F79B25BDCED500089C89 /* GeographicalQuestionsSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3F79A25BDCED500089C89 /* GeographicalQuestionsSeeds.swift */; };
 		0EA3F7AE25BDCFFE00089C89 /* GeographicalQuestions+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3F7AC25BDCFFE00089C89 /* GeographicalQuestions+CoreDataClass.swift */; };
+		0EF692BF25D2FDB70067975D /* QuestionCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF692BE25D2FDB70067975D /* QuestionCustomView.swift */; };
 		3BCF60AFB0A0D377E53E7C03 /* Pods_QuizTPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B907539F2057CD1B326B62E5 /* Pods_QuizTPTests.framework */; };
 		3DDCAF63FC5DD4843E4FD86F /* Pods_QuizTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BFAD0D370E9D1062BEA346 /* Pods_QuizTP.framework */; };
 		80934E109FDAA0A77F9DE310 /* Pods_QuizTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430FD31F9131D52CA8F57321 /* Pods_QuizTV.framework */; };
@@ -79,12 +80,13 @@
 		0E02120E25D14E71003CC3BD /* check.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = check.json; sourceTree = "<group>"; };
 		0E0C1A0525D143750065AB1D /* GeographicalQuizResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeographicalQuizResultsViewController.swift; sourceTree = "<group>"; };
 		0E0C1A0625D143750065AB1D /* GeographicalQuizResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeographicalQuizResultsViewController.xib; sourceTree = "<group>"; };
-		0E0C1A0D25D1483A0065AB1D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		0E0C1A0D25D1483A0065AB1D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0E5343F525BDAD32008EA819 /* GeographicalQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeographicalQuizViewController.swift; sourceTree = "<group>"; };
 		0E5343F625BDAD32008EA819 /* GeographicalQuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeographicalQuizViewController.xib; sourceTree = "<group>"; };
 		0E83876625BB4FBF0067969A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		0EA3F79A25BDCED500089C89 /* GeographicalQuestionsSeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeographicalQuestionsSeeds.swift; sourceTree = "<group>"; };
 		0EA3F7AC25BDCFFE00089C89 /* GeographicalQuestions+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeographicalQuestions+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0EF692BE25D2FDB70067975D /* QuestionCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCustomView.swift; sourceTree = "<group>"; };
 		1773EFC2F313EC0B28127222 /* Pods-QuizTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizTP.release.xcconfig"; path = "Target Support Files/Pods-QuizTP/Pods-QuizTP.release.xcconfig"; sourceTree = "<group>"; };
 		2635DCD7A82A9EBC9BD897A6 /* Pods_QuizTP_QuizTPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizTP_QuizTPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FECC982EA2AC7F9389FA039 /* Pods-QuizTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizTP.debug.xcconfig"; path = "Target Support Files/Pods-QuizTP/Pods-QuizTP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -355,6 +357,7 @@
 				8F66D7522598D88100B38608 /* Question */,
 				8F66D7512598D87A00B38608 /* Categories */,
 				8F66D7502598D87600B38608 /* Home */,
+				0EF692BE25D2FDB70067975D /* QuestionCustomView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -764,6 +767,7 @@
 				8F66D76F2598D90400B38608 /* AnswerCollectionViewCell.swift in Sources */,
 				0E5343F725BDAD32008EA819 /* GeographicalQuizViewController.swift in Sources */,
 				8F66D79C2598DCD500B38608 /* QuestionService.swift in Sources */,
+				0EF692BF25D2FDB70067975D /* QuestionCustomView.swift in Sources */,
 				8F66D7962598DB0200B38608 /* CategoriesCollectionViewCell.swift in Sources */,
 				8F66D7A12598DD2D00B38608 /* HttpQuestionService.swift in Sources */,
 				8F66D7072598D76A00B38608 /* AppDelegate.swift in Sources */,
