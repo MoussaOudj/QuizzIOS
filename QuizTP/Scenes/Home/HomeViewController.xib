@@ -20,8 +20,12 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LeQuizLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fBP-tO-xIO">
+                    <rect key="frame" x="10" y="339.5" width="394" height="217.5"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUU-lL-KwV">
-                    <rect key="frame" x="185" y="427.5" width="44" height="41"/>
+                    <rect key="frame" x="10" y="567" width="394" height="41"/>
+                    <color key="backgroundColor" red="0.0" green="0.32033333330000002" blue="0.62" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <state key="normal" title="Play">
                         <color key="titleColor" systemColor="systemGray6Color"/>
@@ -30,37 +34,25 @@
                         <action selector="goToPlay:" destination="-1" eventType="touchUpInside" id="Wl0-Ei-e9d"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QuizQuiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IP-tz-G1Q">
-                    <rect key="frame" x="147.5" y="291.5" width="119" height="36"/>
-                    <color key="tintColor" systemColor="systemTealColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <color key="textColor" systemColor="systemYellowColor"/>
-                    <color key="highlightedColor" systemColor="systemGreenColor"/>
-                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="0.029776219279999998" green="0.31711101530000002" blue="0.60002934929999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color key="backgroundColor" red="0.99876087899999999" green="0.9704526067" blue="0.89018428329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="BUU-lL-KwV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="MjT-jj-Luf"/>
-                <constraint firstItem="8IP-tz-G1Q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ahF-mG-02P"/>
-                <constraint firstItem="BUU-lL-KwV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dYh-kZ-TOG"/>
-                <constraint firstItem="BUU-lL-KwV" firstAttribute="top" secondItem="8IP-tz-G1Q" secondAttribute="bottom" constant="100" id="q7P-Zg-zUS"/>
+                <constraint firstItem="fBP-tO-xIO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Iuj-aJ-Sso"/>
+                <constraint firstItem="BUU-lL-KwV" firstAttribute="top" secondItem="fBP-tO-xIO" secondAttribute="bottom" constant="10" id="J4G-YJ-k3U"/>
+                <constraint firstItem="fBP-tO-xIO" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="NzF-ak-0nu"/>
+                <constraint firstItem="BUU-lL-KwV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="PJ6-yj-puw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fBP-tO-xIO" secondAttribute="trailing" constant="10" id="PhI-S6-Xng"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BUU-lL-KwV" secondAttribute="trailing" constant="10" id="bR2-mQ-W4D"/>
+                <constraint firstItem="fBP-tO-xIO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="bTj-iJ-M6f"/>
             </constraints>
             <point key="canvasLocation" x="139" y="93"/>
         </view>
     </objects>
     <resources>
+        <image name="LeQuizLogo" width="300" height="217.5"/>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

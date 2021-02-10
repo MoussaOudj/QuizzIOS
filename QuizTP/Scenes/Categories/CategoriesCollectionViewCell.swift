@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class CategoriesCollectionViewCell: UICollectionViewCell {
 
     
@@ -21,8 +22,8 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
-    func configureCell(imageView:UIImageView,customText:String){
-        customCategorieView.image = imageView
+    func configureCell(imageJson:String,customText:String){
+        customCategorieView.image = imageJson
         customCategorieView.text =  customText
     }
 

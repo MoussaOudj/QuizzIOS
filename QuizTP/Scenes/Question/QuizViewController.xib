@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -18,18 +18,42 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0O-7p-6o2" customClass="QuestionCustomView" customModule="QuizTP" customModuleProvider="target">
-                    <rect key="frame" x="10" y="84" width="394" height="295.5"/>
+                    <rect key="frame" x="44" y="0.0" width="393" height="393"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstAttribute="width" secondItem="g0O-7p-6o2" secondAttribute="height" multiplier="2:2" id="Aby-HQ-oGp"/>
                         <constraint firstAttribute="width" secondItem="g0O-7p-6o2" secondAttribute="height" multiplier="4:3" id="Enr-Zx-xU0"/>
+                        <constraint firstAttribute="width" secondItem="g0O-7p-6o2" secondAttribute="height" multiplier="16:6" id="R8L-yR-Q3P"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Aby-HQ-oGp"/>
+                            <exclude reference="Enr-Zx-xU0"/>
+                            <exclude reference="R8L-yR-Q3P"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="Aby-HQ-oGp"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Enr-Zx-xU0"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="R8L-yR-Q3P"/>
+                        </mask>
+                    </variation>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="GbA-6D-r2x">
-                    <rect key="frame" x="10" y="397" width="394" height="455"/>
+                    <rect key="frame" x="447" y="0.0" width="405" height="414"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hsu-0T-2i3">
                         <size key="itemSize" width="128" height="128"/>
@@ -43,28 +67,86 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GbA-6D-r2x" secondAttribute="trailing" constant="10" id="06J-u7-hz0"/>
+                <constraint firstItem="g0O-7p-6o2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0yJ-n2-LZB"/>
+                <constraint firstItem="GbA-6D-r2x" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="568-GS-9gc"/>
+                <constraint firstItem="GbA-6D-r2x" firstAttribute="leading" secondItem="g0O-7p-6o2" secondAttribute="trailing" constant="10" id="5Si-Pz-aaf"/>
+                <constraint firstItem="g0O-7p-6o2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="6Tn-wR-sZE"/>
                 <constraint firstItem="GbA-6D-r2x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Bnq-EB-iMB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GbA-6D-r2x" secondAttribute="trailing" id="CAm-E7-J8v"/>
                 <constraint firstItem="g0O-7p-6o2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="Efp-TP-USQ"/>
+                <constraint firstItem="GbA-6D-r2x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FY6-pe-031"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="g0O-7p-6o2" secondAttribute="bottom" id="HJn-IA-28L"/>
+                <constraint firstItem="GbA-6D-r2x" firstAttribute="top" secondItem="g0O-7p-6o2" secondAttribute="bottom" id="O78-Dg-L2a"/>
                 <constraint firstItem="g0O-7p-6o2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="PqX-QV-4zo"/>
+                <constraint firstAttribute="bottom" secondItem="GbA-6D-r2x" secondAttribute="bottom" id="TMp-qd-voe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="GbA-6D-r2x" secondAttribute="bottom" constant="10" id="TTm-CP-Mvh"/>
+                <constraint firstItem="g0O-7p-6o2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TuI-vV-blr"/>
                 <constraint firstItem="GbA-6D-r2x" firstAttribute="top" secondItem="g0O-7p-6o2" secondAttribute="bottom" constant="17.5" id="ajj-0Z-IkF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="g0O-7p-6o2" secondAttribute="trailing" constant="10" id="bR3-92-8XU"/>
+                <constraint firstAttribute="bottom" secondItem="GbA-6D-r2x" secondAttribute="bottom" id="f7e-IX-gBW"/>
+                <constraint firstItem="g0O-7p-6o2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fxh-PR-5JD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="g0O-7p-6o2" secondAttribute="trailing" id="nFy-6B-Gvi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GbA-6D-r2x" secondAttribute="trailing" id="rCL-sI-b9Z"/>
             </constraints>
             <variation key="default">
                 <mask key="constraints">
+                    <exclude reference="0yJ-n2-LZB"/>
+                    <exclude reference="6Tn-wR-sZE"/>
+                    <exclude reference="Efp-TP-USQ"/>
+                    <exclude reference="PqX-QV-4zo"/>
+                    <exclude reference="TuI-vV-blr"/>
+                    <exclude reference="fxh-PR-5JD"/>
                     <exclude reference="06J-u7-hz0"/>
+                    <exclude reference="CAm-E7-J8v"/>
+                    <exclude reference="HJn-IA-28L"/>
                     <exclude reference="TTm-CP-Mvh"/>
+                    <exclude reference="bR3-92-8XU"/>
+                    <exclude reference="nFy-6B-Gvi"/>
+                    <exclude reference="rCL-sI-b9Z"/>
+                    <exclude reference="568-GS-9gc"/>
+                    <exclude reference="5Si-Pz-aaf"/>
                     <exclude reference="Bnq-EB-iMB"/>
+                    <exclude reference="FY6-pe-031"/>
+                    <exclude reference="O78-Dg-L2a"/>
+                    <exclude reference="TMp-qd-voe"/>
+                    <exclude reference="ajj-0Z-IkF"/>
+                    <exclude reference="f7e-IX-gBW"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="TuI-vV-blr"/>
+                    <include reference="fxh-PR-5JD"/>
+                    <include reference="CAm-E7-J8v"/>
+                    <include reference="HJn-IA-28L"/>
+                    <include reference="568-GS-9gc"/>
+                    <include reference="5Si-Pz-aaf"/>
+                    <include reference="f7e-IX-gBW"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="constraints">
+                    <include reference="Efp-TP-USQ"/>
+                    <include reference="PqX-QV-4zo"/>
                     <include reference="06J-u7-hz0"/>
                     <include reference="TTm-CP-Mvh"/>
+                    <include reference="bR3-92-8XU"/>
                     <include reference="Bnq-EB-iMB"/>
+                    <include reference="ajj-0Z-IkF"/>
                 </mask>
             </variation>
-            <point key="canvasLocation" x="78.75" y="113"/>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="0yJ-n2-LZB"/>
+                    <include reference="6Tn-wR-sZE"/>
+                    <include reference="nFy-6B-Gvi"/>
+                    <include reference="rCL-sI-b9Z"/>
+                    <include reference="FY6-pe-031"/>
+                    <include reference="O78-Dg-L2a"/>
+                    <include reference="TMp-qd-voe"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="78.348214285714278" y="111.59420289855073"/>
         </view>
     </objects>
     <resources>

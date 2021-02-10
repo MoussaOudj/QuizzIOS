@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="QuizTV" customModuleProvider="target">
             <connections>
+                <outlet property="homeTVOS" destination="8ub-gs-Y4O" id="EbW-DR-h1a"/>
                 <outlet property="playButton" destination="BUU-lL-KwV" id="IMC-Xt-AWA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -29,37 +30,32 @@
                         <action selector="goToPlay:" destination="-1" eventType="primaryActionTriggered" id="efM-iA-0uX"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QuizQuiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IP-tz-G1Q">
-                    <rect key="frame" x="900" y="383.5" width="120" height="36"/>
-                    <color key="tintColor" systemColor="systemTealColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <color key="textColor" systemColor="systemYellowColor"/>
-                    <color key="highlightedColor" systemColor="systemGreenColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ub-gs-Y4O" customClass="AnimationView" customModule="Lottie">
+                    <rect key="frame" x="130" y="70" width="1660" height="449.5"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="quizHome"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.0" green="0.24733333330000001" blue="0.53000000000000003" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="8ub-gs-Y4O" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="G6p-B8-gQM"/>
                 <constraint firstItem="BUU-lL-KwV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="MjT-jj-Luf"/>
-                <constraint firstItem="8IP-tz-G1Q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ahF-mG-02P"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8ub-gs-Y4O" secondAttribute="trailing" constant="50" id="RGO-EW-QS8"/>
                 <constraint firstItem="BUU-lL-KwV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dYh-kZ-TOG"/>
-                <constraint firstItem="BUU-lL-KwV" firstAttribute="top" secondItem="8IP-tz-G1Q" secondAttribute="bottom" constant="100" id="q7P-Zg-zUS"/>
+                <constraint firstItem="BUU-lL-KwV" firstAttribute="top" secondItem="8ub-gs-Y4O" secondAttribute="bottom" id="fL5-sq-g0j"/>
+                <constraint firstItem="8ub-gs-Y4O" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="oEa-Qa-6Dy"/>
             </constraints>
             <point key="canvasLocation" x="139" y="93"/>
         </view>
     </objects>
+    <designables>
+        <designable name="8ub-gs-Y4O"/>
+    </designables>
     <resources>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

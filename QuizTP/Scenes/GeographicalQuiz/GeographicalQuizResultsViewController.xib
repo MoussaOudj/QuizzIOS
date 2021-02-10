@@ -20,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BnV-iG-3cX" customClass="AnimationView" customModule="Lottie">
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BnV-iG-3cX" customClass="AnimationView" customModule="Lottie">
                     <rect key="frame" x="67" y="285" width="281" height="330"/>
                     <color key="backgroundColor" red="0.029776219279999998" green="0.31711101530000002" blue="0.60002934929999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <userDefinedRuntimeAttributes>
@@ -39,7 +39,7 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3w5-p8-YlP">
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3w5-p8-YlP">
                     <rect key="frame" x="139" y="719" width="137" height="39"/>
                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                     <state key="normal" title="MENU QUIZ">
@@ -70,4 +70,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="62.946428571428569"/>
         </view>
     </objects>
+    <designables>
+        <designable name="BnV-iG-3cX"/>
+    </designables>
 </document>

@@ -12,15 +12,15 @@ class CategoriesViewController: UIViewController {
     @IBOutlet weak var categoriesCollectionView: UICollectionView!
     
     let categoriesTable:[(categorie:String,image:String)] = [
-        ("cinema","image-cine"),
-        ("culture","image-culture"),
-        ("informatique","image-informatique"),
-        ("loisirs","image-loisirs"),
-        ("sciences","image-sciences"),
-        ("television","image-television"),
-        ("arts","image-arts"),
-        ("musique","image-musique"),
-        ("Géographie","image-geographie")]
+        ("Cinema","cinema"),
+        ("Culture","culture"),
+        ("Informatique","informatique"),
+        ("Loisirs","loisirs"),
+        ("Sciences","sciences"),
+        ("Television","television"),
+        ("Arts","arts"),
+        ("Musique","musique"),
+        ("Géographie","geo")]
     
     private struct const {
         static let collectionBackgroundColor = UIColor .init(red: 0, green: 63/255, blue: 136/255, alpha: 1)
@@ -36,7 +36,12 @@ class CategoriesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.categoriesCollectionView.backgroundColor = const.collectionBackgroundColor
+        let gradient = CAGradientLayer()
+        gradient.frame = UIScreen.main.bounds
+            //255 247 255
+        gradient.colors = [UIColor.init(red: 1, green: 227/255, blue: 164/255, alpha: 1).cgColor,UIColor.init(red: 1, green: 247/255, blue: 227/255, alpha: 1).cgColor]
+        view.layer.insertSublayer(gradient, at: 0)
+        self.categoriesCollectionView.backgroundColor = .clear
         self.categoriesCollectionView.register(UINib(nibName: "CategoriesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "categorieCell")
         self.categoriesCollectionView.delegate = self
         self.categoriesCollectionView.dataSource = self
@@ -63,7 +68,8 @@ extension CategoriesViewController:UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categorieCell", for: indexPath) as! CategoriesCollectionViewCell
-        cell.configureCell(imageView: UIImageView(image: UIImage(named: categoriesTable[indexPath.row].image)), customText: categoriesTable[indexPath.row].categorie)
+        cell.backgroundColor = .clear
+        cell.configureCell(imageJson: categoriesTable[indexPath.row].image, customText: categoriesTable[indexPath.row].categorie)
         return cell
         
     }

@@ -8,7 +8,7 @@
 import Foundation
 public class HttpQuestionService:QuestionService{
     func getQuestionFor(categorie: String, completionHandler: @escaping (Question?) -> Void) {
-        let url = URL(string: "https://www.openquizzdb.org/api.php?key=74G62ZDZZ8&categ=\(categorie)&anec=1")!
+        let url = URL(string: "https://www.openquizzdb.org/api.php?key=74G62ZDZZ8&categ=\(categorie.lowercased())&anec=1")!
         let session = URLSession.shared
         let request = URLRequest(url: url)
         let task = session.dataTask(with: request as URLRequest) { data, response, error in

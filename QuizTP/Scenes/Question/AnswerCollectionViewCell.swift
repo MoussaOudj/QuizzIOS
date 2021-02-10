@@ -14,8 +14,8 @@ class AnswerCollectionViewCell: UICollectionViewCell {
     private struct const {
         static let focusedBackgroundColor = UIColor.brown
         static let focusedTextColor = UIColor.white
-        static let defaultBackgroundColor = UIColor.init(red: 0, green: 80/255, blue: 157/255, alpha: 1)
-        static let defaultTextColor = UIColor.init(red: 1, green: 213/255, blue: 0, alpha: 1)
+        static let defaultBackgroundColor = UIColor.init(red: 1, green: 251/255, blue: 242/255, alpha: 1)
+        static let defaultTextColor = UIColor.darkGray
     }
     
     #if os(tvOS)

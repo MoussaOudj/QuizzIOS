@@ -18,8 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let homeViewController = HomeViewController()
     
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        #if os(tvOS)
+        #else
         let dataHelper = DataHelper(context: context)
         dataHelper.launchSeeds()
+        #endif
+        
+       
         
         window.rootViewController = UINavigationController(rootViewController: homeViewController);
         window.makeKeyAndVisible()

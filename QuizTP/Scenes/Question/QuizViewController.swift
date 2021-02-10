@@ -18,9 +18,9 @@ class QuizViewController: UIViewController {
     var goodAnswer:String?
     var anecdote:String?
     var theme:String!
+    let gradient = CAGradientLayer()
     
     private struct const {
-        static let cellBackgroundColor = UIColor.init(red: 0, green: 63/255, blue: 136/255, alpha: 1)
         static let questionTransitionDuration:TimeInterval = 2
         static let answerTransitionDuration:TimeInterval = 1
         static let neededRowCellNumber:CGFloat = 2
@@ -37,11 +37,20 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //0, 63, 136
-        self.collectionAnswerView.backgroundColor = const.cellBackgroundColor
+        gradient.frame = UIScreen.main.bounds
+        gradient.colors = [UIColor.init(red: 1, green: 227/255, blue: 164/255, alpha: 1).cgColor,UIColor.init(red: 1, green: 247/255, blue: 227/255, alpha: 1).cgColor]
+        view.layer.insertSublayer(gradient, at: 0)
         self.collectionAnswerView.register(UINib(nibName: "AnswerCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "answerCell")
         self.collectionAnswerView.delegate = self
         self.collectionAnswerView.dataSource = self
+        collectionAnswerView.backgroundColor = .clear
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        questionView.subviews.forEach { (subview) in
+            subview.removeFromSuperview()
+        }
+        questionView.setNeedsDisplay()
     }
     
     
