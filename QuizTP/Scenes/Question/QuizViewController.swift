@@ -124,7 +124,7 @@ extension QuizViewController:UICollectionViewDelegate{
                                     animationView.frame = self.questionView.bounds
                                     animationView.contentMode = .scaleAspectFit
                                     animationView.loopMode = .loop
-                                    animationView.animationSpeed = 0.5
+                                    animationView.animationSpeed = 1
                                     animationView.play()
                                     self.questionView.addSubview(animationView)
                                     self.questionView.isHidden = false
@@ -169,7 +169,7 @@ extension QuizViewController:UICollectionViewDelegate{
                         animationView.frame = self.questionView.bounds
                         animationView.contentMode = .scaleAspectFit
                         animationView.loopMode = .playOnce
-                        animationView.animationSpeed = 0.5
+                        animationView.animationSpeed = 1
                         animationView.play()
                         self.questionView.addSubview(animationView)
                         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {

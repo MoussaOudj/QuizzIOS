@@ -10,6 +10,7 @@ import Lottie
 
 class GeographicalQuizMenuViewController: UIViewController {
 
+    
     @IBOutlet var worldMapAnimation: AnimationView!
     
     override func viewDidLoad() {
@@ -20,7 +21,7 @@ class GeographicalQuizMenuViewController: UIViewController {
         worldMapAnimation.animationSpeed = 1
         worldMapAnimation.play()
     }
-
+    
     @IBAction func goToAfricaQuiz(_ sender: Any) {
         let geographicalQuizViewController = GeographicalQuizViewController(nibName: "GeographicalQuizViewController", bundle: nil)
         
@@ -28,11 +29,14 @@ class GeographicalQuizMenuViewController: UIViewController {
         navigationController?.pushViewController(geographicalQuizViewController, animated: true)
     }
     
+    
     @IBAction func goToEuropeQuiz(_ sender: Any) {
         let geographicalQuizViewController = GeographicalQuizViewController(nibName: "GeographicalQuizViewController", bundle: nil)
         
         geographicalQuizViewController.quizCategory = "EUROPE"
         navigationController?.pushViewController(geographicalQuizViewController, animated: true)
     }
+    
+    
     
 }

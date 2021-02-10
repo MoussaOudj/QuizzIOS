@@ -12,6 +12,7 @@ import CoreData
 class GeographicalQuizViewController: UIViewController {
     
     @IBOutlet var mapView: MKMapView!
+    
     @IBOutlet var collectionAnswerView: UICollectionView!
     var answerTable: [String?] = []
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -32,14 +33,17 @@ class GeographicalQuizViewController: UIViewController {
         self.collectionAnswerView.dataSource = self
         
         setupMap()
-
     }
     
     private func setupMap() {
         mapView.isZoomEnabled = false
         mapView.isScrollEnabled = false
         mapView.isUserInteractionEnabled = false
-        mapView.mapType = .satellite
+        #if os(tvOS)
+            mapView.mapType = .standard
+        #else
+            mapView.mapType = .satellite
+        #endif
     }
     
     private func setMapCountry(mapCountry: String) {
@@ -81,6 +85,7 @@ class GeographicalQuizViewController: UIViewController {
             print("SOMETHING FAILED")
         }
         DispatchQueue.main.async {
+            print(self.questions)
             if self.questions != nil  {
                 self.updateQuestion((self.questions?[self.quizCounter])!)
             }
@@ -95,6 +100,7 @@ class GeographicalQuizViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
+    
 }
 
 extension GeographicalQuizViewController:UICollectionViewDelegate {
@@ -142,5 +148,3 @@ extension GeographicalQuizViewController:UICollectionViewDelegateFlowLayout{
         return CGSize(width: self.collectionAnswerView.bounds.width/2 - 10, height: self.collectionAnswerView.bounds.height/2 - 10)
     }
 }
-
-

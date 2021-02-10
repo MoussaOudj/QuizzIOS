@@ -18,9 +18,11 @@
 		0E0C1A0E25D1483A0065AB1D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0E0C1A0D25D1483A0065AB1D /* Podfile */; };
 		0E5343F725BDAD32008EA819 /* GeographicalQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5343F525BDAD32008EA819 /* GeographicalQuizViewController.swift */; };
 		0E5343F825BDAD32008EA819 /* GeographicalQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E5343F625BDAD32008EA819 /* GeographicalQuizViewController.xib */; };
+		0E6F8CB425D46001007786CA /* world.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E6F8CB325D46001007786CA /* world.json */; };
 		0E83876725BB4FBF0067969A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E83876525BB4FBF0067969A /* Model.xcdatamodeld */; };
 		0EA3F79B25BDCED500089C89 /* GeographicalQuestionsSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3F79A25BDCED500089C89 /* GeographicalQuestionsSeeds.swift */; };
 		0EA3F7AE25BDCFFE00089C89 /* GeographicalQuestions+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3F7AC25BDCFFE00089C89 /* GeographicalQuestions+CoreDataClass.swift */; };
+		0EA907CE25D4677A00B490D3 /* clap.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EA907CD25D4677A00B490D3 /* clap.json */; };
 		0EB4491725D2FAA200DCDB41 /* world.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EB4491625D2FAA200DCDB41 /* world.json */; };
 		0EF692BF25D2FDB70067975D /* QuestionCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF692BE25D2FDB70067975D /* QuestionCustomView.swift */; };
 		3BCF60AFB0A0D377E53E7C03 /* Pods_QuizTPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B907539F2057CD1B326B62E5 /* Pods_QuizTPTests.framework */; };
@@ -124,9 +126,11 @@
 		0E0C1A0D25D1483A0065AB1D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0E5343F525BDAD32008EA819 /* GeographicalQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeographicalQuizViewController.swift; sourceTree = "<group>"; };
 		0E5343F625BDAD32008EA819 /* GeographicalQuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeographicalQuizViewController.xib; sourceTree = "<group>"; };
+		0E6F8CB325D46001007786CA /* world.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = world.json; path = animations/world.json; sourceTree = "<group>"; };
 		0E83876625BB4FBF0067969A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		0EA3F79A25BDCED500089C89 /* GeographicalQuestionsSeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeographicalQuestionsSeeds.swift; sourceTree = "<group>"; };
 		0EA3F7AC25BDCFFE00089C89 /* GeographicalQuestions+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeographicalQuestions+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0EA907CD25D4677A00B490D3 /* clap.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = clap.json; path = QuizTP/clap.json; sourceTree = SOURCE_ROOT; };
 		0EB4491625D2FAA200DCDB41 /* world.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = world.json; sourceTree = "<group>"; };
 		0EF692BE25D2FDB70067975D /* QuestionCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCustomView.swift; sourceTree = "<group>"; };
 		1773EFC2F313EC0B28127222 /* Pods-QuizTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizTP.release.xcconfig"; path = "Target Support Files/Pods-QuizTP/Pods-QuizTP.release.xcconfig"; sourceTree = "<group>"; };
@@ -296,6 +300,8 @@
 		8F190351259BA87300848916 /* QuizTV */ = {
 			isa = PBXGroup;
 			children = (
+				0EA907CD25D4677A00B490D3 /* clap.json */,
+				0E6F8CB325D46001007786CA /* world.json */,
 				8F6230C4259F432500B5ED2A /* Scenes */,
 				8F190359259BA87400848916 /* Assets.xcassets */,
 				8F19035B259BA87400848916 /* LaunchScreen.storyboard */,
@@ -666,6 +672,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E6F8CB425D46001007786CA /* world.json in Resources */,
 				8FB5460F25D4197000A54ECC /* GeographicalQuizResultsViewController.xib in Resources */,
 				8FBF3C9725D4308E003165B2 /* television.json in Resources */,
 				8FBF3CBF25D43380003165B2 /* geo.json in Resources */,
@@ -674,6 +681,7 @@
 				8FBF3CA625D43110003165B2 /* loisirs.json in Resources */,
 				8FBF3CA125D430CF003165B2 /* musique.json in Resources */,
 				8F19035D259BA87400848916 /* LaunchScreen.storyboard in Resources */,
+				0EA907CE25D4677A00B490D3 /* clap.json in Resources */,
 				8F6230B1259F398300B5ED2A /* CategoriesCollectionViewCell.xib in Resources */,
 				8F623088259F358900B5ED2A /* HomeViewController.xib in Resources */,
 				8F6230ED259F6C9D00B5ED2A /* Assets.xcassets in Resources */,

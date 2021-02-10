@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GeographicalQuizResultsViewController" customModule="QuizTP" customModuleProvider="target">
             <connections>
-                <outlet property="checkAnimation" destination="BnV-iG-3cX" id="iUE-rb-tK3"/>
+                <outlet property="clapAnimation" destination="BnV-iG-3cX" id="Dv2-Jx-Wu1"/>
                 <outlet property="quizScoreUiLabel" destination="1wT-Pw-9hE" id="2m8-BP-OeA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
