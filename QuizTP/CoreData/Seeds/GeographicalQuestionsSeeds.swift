@@ -69,7 +69,7 @@ public class DataHelper {
          countryCode: "AUT",
          answerA: "Allemagne",
          answerB: "Italie",
-         answerC: "Luxembourd",
+         answerC: "Luxembourg",
          answerD: "Autriche",
          rightAnswer: "Autriche"),
         

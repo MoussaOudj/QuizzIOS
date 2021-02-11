@@ -49,9 +49,9 @@ class GeographicalQuizViewController: UIViewController {
     private func setMapCountry(mapCountry: String) {
         let searchRequest = MKLocalSearch.Request()
         searchRequest.naturalLanguageQuery = mapCountry
-
+        
         let search = MKLocalSearch(request: searchRequest)
-
+        
         search.start { response, error in
             guard let response = response else {
                 print("Error: \(error?.localizedDescription ?? "Unknown error").")
@@ -60,6 +60,7 @@ class GeographicalQuizViewController: UIViewController {
             self.mapView.setRegion(response.boundingRegion, animated: true)
         }
     }
+
     
     fileprivate func updateQuestion(_ question: GeographicalQuestions) {
         self.answerTable = [question.answerA,question.answerB, question.answerC, question.answerD]
@@ -85,7 +86,6 @@ class GeographicalQuizViewController: UIViewController {
             print("SOMETHING FAILED")
         }
         DispatchQueue.main.async {
-            print(self.questions)
             if self.questions != nil  {
                 self.updateQuestion((self.questions?[self.quizCounter])!)
             }
