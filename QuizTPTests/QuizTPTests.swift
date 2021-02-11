@@ -17,12 +17,41 @@ class QuizTPTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testInitQuestion(){
+        let question = Question(question: "Ou suis-je", reponse: "Test", choix: ["choix1","choix2","choix3","choix4"], anecdote: "Il est ou")
+        XCTAssertNotNil(question)
+    }
+    
+    func testQuestionGoodAnswer(){
+        let question = Question(question: "Ou suis-je", reponse: "Test", choix: ["choix1","choix2","choix3","choix4"], anecdote: "Il est ou")
+        let answer = question.choix[1]
+        let goodAnswer = "choix2"
+        XCTAssertTrue(answer == goodAnswer)
     }
 
+    func testQuestionBadAnswer(){
+        let question = Question(question: "Ou suis-je", reponse: "Test", choix: ["choix1","choix2","choix3","choix4"], anecdote: "Il est ou")
+        let answer = question.choix[1]
+        let goodAnswer = "3"
+        XCTAssertFalse(answer == goodAnswer)
+    }
+    
+    func testInMemoryRequestNotNil(){
+        let questionRequester = InMemoryQuestionService()
+        questionRequester.getQuestionFor(categorie: "questionSample", completionHandler: { question in
+            XCTAssertNotNil(question)
+        })
+    }
+    
+    func testInMemoryRequestNoResponse(){
+        let questionRequester = InMemoryQuestionService()
+        questionRequester.getQuestionFor(categorie: "noQuestionSample", completionHandler: { question in
+            XCTAssertNil(question)
+        })
+    }
+    
+    
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {

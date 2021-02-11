@@ -1,0 +1,24 @@
+{
+  "api_version": "2.3",
+  "api_server": "OpenQuizzDB SRV2",
+  "api_runtime": "0.044 sec",
+  "api_key": "74G62ZDZZ8",
+  "response_code": 0,
+  "results": [
+    {
+      "langue": "fr",
+      "categorie": "cinema",
+      "theme": "Toy Story",
+      "difficulte": "expert",
+      "question": "Dans 'Toy Story 2', à qui appartenait Jessie avant d'être abandonnée ?",
+      "reponse_correcte": "Emily",
+      "autres_choix": [
+        "Emily",
+        "Mary",
+        "Molly",
+        "Suzy"
+      ],
+      "anecdote": "Toujours surexcitée et débordante d'énergie, elle est heureuse de voir Woody à ses côtés."
+    }
+  ]
+}

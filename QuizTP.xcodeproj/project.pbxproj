@@ -33,6 +33,8 @@
 		8F190378259BA8CE00848916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D7062598D76A00B38608 /* AppDelegate.swift */; };
 		8F20501225D4446200F82752 /* cinema.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F20501125D4446200F82752 /* cinema.json */; };
 		8F20501325D4446200F82752 /* cinema.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F20501125D4446200F82752 /* cinema.json */; };
+		8F25AD9B25D544C1002A8538 /* InMemoryQuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F25AD9A25D544C1002A8538 /* InMemoryQuestionService.swift */; };
+		8F25ADB025D548C7002A8538 /* questionSample.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F25ADAF25D548C7002A8538 /* questionSample.json */; };
 		8F3A455F25D4037800C7032C /* arts.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3A455725D4037700C7032C /* arts.json */; };
 		8F3A456025D4037800C7032C /* sciences.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3A455825D4037700C7032C /* sciences.json */; };
 		8F3A456125D4037800C7032C /* loisirs.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F3A455925D4037700C7032C /* loisirs.json */; };
@@ -72,6 +74,9 @@
 		8F66D7972598DB0200B38608 /* CategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F66D7952598DB0200B38608 /* CategoriesCollectionViewCell.xib */; };
 		8F66D79C2598DCD500B38608 /* QuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D79B2598DCD500B38608 /* QuestionService.swift */; };
 		8F66D7A12598DD2D00B38608 /* HttpQuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D7A02598DD2D00B38608 /* HttpQuestionService.swift */; };
+		8F9B283A25D54AB0006A4541 /* noQuestionSample.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F9B283925D54AB0006A4541 /* noQuestionSample.json */; };
+		8F9B284D25D54BF9006A4541 /* questionSample.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F25ADAF25D548C7002A8538 /* questionSample.json */; };
+		8F9B285225D54BFB006A4541 /* noQuestionSample.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F9B283925D54AB0006A4541 /* noQuestionSample.json */; };
 		8FB545E125D418D800A54ECC /* QuestionCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF692BE25D2FDB70067975D /* QuestionCustomView.swift */; };
 		8FB545E625D418E600A54ECC /* GeographicalQuizMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E02123025D2F349003CC3BD /* GeographicalQuizMenuViewController.swift */; };
 		8FB545EB25D418E900A54ECC /* GeographicalQuizResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0C1A0525D143750065AB1D /* GeographicalQuizResultsViewController.swift */; };
@@ -146,6 +151,8 @@
 		8F19035C259BA87400848916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F19035E259BA87400848916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F20501125D4446200F82752 /* cinema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cinema.json; sourceTree = "<group>"; };
+		8F25AD9A25D544C1002A8538 /* InMemoryQuestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InMemoryQuestionService.swift; path = QuizTP/Scenes/Categories/CategorieLottieAssets/InMemoryQuestionService.swift; sourceTree = SOURCE_ROOT; };
+		8F25ADAF25D548C7002A8538 /* questionSample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questionSample.json; sourceTree = "<group>"; };
 		8F3A455725D4037700C7032C /* arts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = arts.json; sourceTree = "<group>"; };
 		8F3A455825D4037700C7032C /* sciences.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sciences.json; sourceTree = "<group>"; };
 		8F3A455925D4037700C7032C /* loisirs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loisirs.json; sourceTree = "<group>"; };
@@ -187,6 +194,7 @@
 		8F66D79B2598DCD500B38608 /* QuestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionService.swift; sourceTree = "<group>"; };
 		8F66D7A02598DD2D00B38608 /* HttpQuestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpQuestionService.swift; sourceTree = "<group>"; };
 		8F9ABBA5259A6D0100312F92 /* QuizTP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuizTP.entitlements; sourceTree = "<group>"; };
+		8F9B283925D54AB0006A4541 /* noQuestionSample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = noQuestionSample.json; sourceTree = "<group>"; };
 		8FB5460825D4195D00A54ECC /* GeographicalQuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeographicalQuizViewController.xib; sourceTree = "<group>"; };
 		8FB5460E25D4197000A54ECC /* GeographicalQuizResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeographicalQuizResultsViewController.xib; sourceTree = "<group>"; };
 		8FB5461425D4197F00A54ECC /* GeographicalQuizMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeographicalQuizMenuViewController.xib; sourceTree = "<group>"; };
@@ -424,6 +432,8 @@
 			children = (
 				8F66D71D2598D76B00B38608 /* QuizTPTests.swift */,
 				8F66D71F2598D76B00B38608 /* Info.plist */,
+				8F25ADAF25D548C7002A8538 /* questionSample.json */,
+				8F9B283925D54AB0006A4541 /* noQuestionSample.json */,
 			);
 			path = QuizTPTests;
 			sourceTree = "<group>";
@@ -519,6 +529,7 @@
 		8F66D7572598D8AF00B38608 /* InMemory */ = {
 			isa = PBXGroup;
 			children = (
+				8F25AD9A25D544C1002A8538 /* InMemoryQuestionService.swift */,
 			);
 			path = InMemory;
 			sourceTree = "<group>";
@@ -707,6 +718,7 @@
 				8F64884C25D32915007B26C9 /* error.json in Resources */,
 				0E02120F25D14E71003CC3BD /* check.json in Resources */,
 				0E0C1A0E25D1483A0065AB1D /* Podfile in Resources */,
+				8F9B285225D54BFB006A4541 /* noQuestionSample.json in Resources */,
 				0E02121D25D2E3BA003CC3BD /* clap.json in Resources */,
 				0E0C1A0825D143750065AB1D /* GeographicalQuizResultsViewController.xib in Resources */,
 				8F66D7132598D76B00B38608 /* LaunchScreen.storyboard in Resources */,
@@ -720,6 +732,7 @@
 				0E5343F825BDAD32008EA819 /* GeographicalQuizViewController.xib in Resources */,
 				8F3A456125D4037800C7032C /* loisirs.json in Resources */,
 				8F3A456625D4037800C7032C /* television.json in Resources */,
+				8F9B284D25D54BF9006A4541 /* questionSample.json in Resources */,
 				8F3A455F25D4037800C7032C /* arts.json in Resources */,
 				8F66D7712598D90400B38608 /* AnswerCollectionViewCell.xib in Resources */,
 				8F66D75C2598D8D500B38608 /* HomeViewController.xib in Resources */,
@@ -736,6 +749,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F25ADB025D548C7002A8538 /* questionSample.json in Resources */,
+				8F9B283A25D54AB0006A4541 /* noQuestionSample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -920,6 +935,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F66D76F2598D90400B38608 /* AnswerCollectionViewCell.swift in Sources */,
+				8F25AD9B25D544C1002A8538 /* InMemoryQuestionService.swift in Sources */,
 				8FB5463725D4228500A54ECC /* QuizViewController.swift in Sources */,
 				0E5343F725BDAD32008EA819 /* GeographicalQuizViewController.swift in Sources */,
 				8F66D79C2598DCD500B38608 /* QuestionService.swift in Sources */,
