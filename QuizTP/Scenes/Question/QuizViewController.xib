@@ -64,7 +64,7 @@
                 </collectionView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.99867874379999999" green="0.9706243873" blue="0.88233983520000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GbA-6D-r2x" secondAttribute="trailing" constant="10" id="06J-u7-hz0"/>
                 <constraint firstItem="g0O-7p-6o2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0yJ-n2-LZB"/>
@@ -90,12 +90,6 @@
             </constraints>
             <variation key="default">
                 <mask key="constraints">
-                    <exclude reference="0yJ-n2-LZB"/>
-                    <exclude reference="6Tn-wR-sZE"/>
-                    <exclude reference="Efp-TP-USQ"/>
-                    <exclude reference="PqX-QV-4zo"/>
-                    <exclude reference="TuI-vV-blr"/>
-                    <exclude reference="fxh-PR-5JD"/>
                     <exclude reference="06J-u7-hz0"/>
                     <exclude reference="CAm-E7-J8v"/>
                     <exclude reference="HJn-IA-28L"/>
@@ -103,6 +97,12 @@
                     <exclude reference="bR3-92-8XU"/>
                     <exclude reference="nFy-6B-Gvi"/>
                     <exclude reference="rCL-sI-b9Z"/>
+                    <exclude reference="0yJ-n2-LZB"/>
+                    <exclude reference="6Tn-wR-sZE"/>
+                    <exclude reference="Efp-TP-USQ"/>
+                    <exclude reference="PqX-QV-4zo"/>
+                    <exclude reference="TuI-vV-blr"/>
+                    <exclude reference="fxh-PR-5JD"/>
                     <exclude reference="568-GS-9gc"/>
                     <exclude reference="5Si-Pz-aaf"/>
                     <exclude reference="Bnq-EB-iMB"/>
@@ -115,10 +115,10 @@
             </variation>
             <variation key="heightClass=compact-widthClass=regular">
                 <mask key="constraints">
-                    <include reference="TuI-vV-blr"/>
-                    <include reference="fxh-PR-5JD"/>
                     <include reference="CAm-E7-J8v"/>
                     <include reference="HJn-IA-28L"/>
+                    <include reference="TuI-vV-blr"/>
+                    <include reference="fxh-PR-5JD"/>
                     <include reference="568-GS-9gc"/>
                     <include reference="5Si-Pz-aaf"/>
                     <include reference="f7e-IX-gBW"/>
@@ -126,21 +126,21 @@
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="constraints">
-                    <include reference="Efp-TP-USQ"/>
-                    <include reference="PqX-QV-4zo"/>
                     <include reference="06J-u7-hz0"/>
                     <include reference="TTm-CP-Mvh"/>
                     <include reference="bR3-92-8XU"/>
+                    <include reference="Efp-TP-USQ"/>
+                    <include reference="PqX-QV-4zo"/>
                     <include reference="Bnq-EB-iMB"/>
                     <include reference="ajj-0Z-IkF"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=regular">
                 <mask key="constraints">
-                    <include reference="0yJ-n2-LZB"/>
-                    <include reference="6Tn-wR-sZE"/>
                     <include reference="nFy-6B-Gvi"/>
                     <include reference="rCL-sI-b9Z"/>
+                    <include reference="0yJ-n2-LZB"/>
+                    <include reference="6Tn-wR-sZE"/>
                     <include reference="FY6-pe-031"/>
                     <include reference="O78-Dg-L2a"/>
                     <include reference="TMp-qd-voe"/>

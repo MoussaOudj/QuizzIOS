@@ -36,11 +36,6 @@ class CategoriesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let gradient = CAGradientLayer()
-        gradient.frame = UIScreen.main.bounds
-            //255 247 255
-        gradient.colors = [UIColor.init(red: 1, green: 227/255, blue: 164/255, alpha: 1).cgColor,UIColor.init(red: 1, green: 247/255, blue: 227/255, alpha: 1).cgColor]
-        view.layer.insertSublayer(gradient, at: 0)
         self.categoriesCollectionView.backgroundColor = .clear
         self.categoriesCollectionView.register(UINib(nibName: "CategoriesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "categorieCell")
         self.categoriesCollectionView.delegate = self

@@ -18,7 +18,6 @@ class QuizViewController: UIViewController {
     var goodAnswer:String?
     var anecdote:String?
     var theme:String!
-    let gradient = CAGradientLayer()
     
     private struct const {
         static let questionTransitionDuration:TimeInterval = 2
@@ -37,9 +36,6 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        gradient.frame = UIScreen.main.bounds
-        gradient.colors = [UIColor.init(red: 1, green: 227/255, blue: 164/255, alpha: 1).cgColor,UIColor.init(red: 1, green: 247/255, blue: 227/255, alpha: 1).cgColor]
-        view.layer.insertSublayer(gradient, at: 0)
         self.collectionAnswerView.register(UINib(nibName: "AnswerCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "answerCell")
         self.collectionAnswerView.delegate = self
         self.collectionAnswerView.dataSource = self
