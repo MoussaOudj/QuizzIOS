@@ -134,7 +134,6 @@
 		0E0C1A0D25D1483A0065AB1D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0E5343F525BDAD32008EA819 /* GeographicalQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeographicalQuizViewController.swift; sourceTree = "<group>"; };
 		0E5343F625BDAD32008EA819 /* GeographicalQuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeographicalQuizViewController.xib; sourceTree = "<group>"; };
-		0E6F8CB325D46001007786CA /* world.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = world.json; path = animations/world.json; sourceTree = "<group>"; };
 		0E83876625BB4FBF0067969A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		0EA3F79A25BDCED500089C89 /* GeographicalQuestionsSeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeographicalQuestionsSeeds.swift; sourceTree = "<group>"; };
 		0EA3F7AC25BDCFFE00089C89 /* GeographicalQuestions+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeographicalQuestions+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -314,7 +313,6 @@
 			isa = PBXGroup;
 			children = (
 				0EA907CD25D4677A00B490D3 /* clap.json */,
-				0E6F8CB325D46001007786CA /* world.json */,
 				8F6230C4259F432500B5ED2A /* Scenes */,
 				8F190359259BA87400848916 /* Assets.xcassets */,
 				8F19035B259BA87400848916 /* LaunchScreen.storyboard */,
