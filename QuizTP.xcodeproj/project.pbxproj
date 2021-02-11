@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,7 +18,6 @@
 		0E0C1A0E25D1483A0065AB1D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0E0C1A0D25D1483A0065AB1D /* Podfile */; };
 		0E5343F725BDAD32008EA819 /* GeographicalQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5343F525BDAD32008EA819 /* GeographicalQuizViewController.swift */; };
 		0E5343F825BDAD32008EA819 /* GeographicalQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E5343F625BDAD32008EA819 /* GeographicalQuizViewController.xib */; };
-		0E6F8CB425D46001007786CA /* world.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E6F8CB325D46001007786CA /* world.json */; };
 		0E83876725BB4FBF0067969A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E83876525BB4FBF0067969A /* Model.xcdatamodeld */; };
 		0EA3F79B25BDCED500089C89 /* GeographicalQuestionsSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3F79A25BDCED500089C89 /* GeographicalQuestionsSeeds.swift */; };
 		0EA3F7AE25BDCFFE00089C89 /* GeographicalQuestions+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3F7AC25BDCFFE00089C89 /* GeographicalQuestions+CoreDataClass.swift */; };
@@ -74,9 +73,13 @@
 		8F66D7972598DB0200B38608 /* CategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F66D7952598DB0200B38608 /* CategoriesCollectionViewCell.xib */; };
 		8F66D79C2598DCD500B38608 /* QuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D79B2598DCD500B38608 /* QuestionService.swift */; };
 		8F66D7A12598DD2D00B38608 /* HttpQuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66D7A02598DD2D00B38608 /* HttpQuestionService.swift */; };
+		8F7B0A1B25D56E700091AB9F /* world.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EB4491625D2FAA200DCDB41 /* world.json */; };
 		8F9B283A25D54AB0006A4541 /* noQuestionSample.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F9B283925D54AB0006A4541 /* noQuestionSample.json */; };
 		8F9B284D25D54BF9006A4541 /* questionSample.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F25ADAF25D548C7002A8538 /* questionSample.json */; };
 		8F9B285225D54BFB006A4541 /* noQuestionSample.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F9B283925D54AB0006A4541 /* noQuestionSample.json */; };
+		8F9B285925D551A2006A4541 /* ScoreUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9B285825D551A2006A4541 /* ScoreUIView.swift */; };
+		8F9B285A25D551A2006A4541 /* ScoreUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9B285825D551A2006A4541 /* ScoreUIView.swift */; };
+		8F9B286125D554EB006A4541 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 8F9B286025D554EB006A4541 /* Lottie */; };
 		8FB545E125D418D800A54ECC /* QuestionCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF692BE25D2FDB70067975D /* QuestionCustomView.swift */; };
 		8FB545E625D418E600A54ECC /* GeographicalQuizMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E02123025D2F349003CC3BD /* GeographicalQuizMenuViewController.swift */; };
 		8FB545EB25D418E900A54ECC /* GeographicalQuizResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0C1A0525D143750065AB1D /* GeographicalQuizResultsViewController.swift */; };
@@ -195,6 +198,7 @@
 		8F66D7A02598DD2D00B38608 /* HttpQuestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpQuestionService.swift; sourceTree = "<group>"; };
 		8F9ABBA5259A6D0100312F92 /* QuizTP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuizTP.entitlements; sourceTree = "<group>"; };
 		8F9B283925D54AB0006A4541 /* noQuestionSample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = noQuestionSample.json; sourceTree = "<group>"; };
+		8F9B285825D551A2006A4541 /* ScoreUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreUIView.swift; sourceTree = "<group>"; };
 		8FB5460825D4195D00A54ECC /* GeographicalQuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeographicalQuizViewController.xib; sourceTree = "<group>"; };
 		8FB5460E25D4197000A54ECC /* GeographicalQuizResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeographicalQuizResultsViewController.xib; sourceTree = "<group>"; };
 		8FB5461425D4197F00A54ECC /* GeographicalQuizMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeographicalQuizMenuViewController.xib; sourceTree = "<group>"; };
@@ -219,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DDCAF63FC5DD4843E4FD86F /* Pods_QuizTP.framework in Frameworks */,
+				8F9B286125D554EB006A4541 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +455,7 @@
 		8F66D74F2598D87000B38608 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				8F9B285725D55175006A4541 /* SwiftUI */,
 				0E04FC3425BDB542003F0E49 /* GeographicalQuiz */,
 				8F66D7522598D88100B38608 /* Question */,
 				8F66D7512598D87A00B38608 /* Categories */,
@@ -542,6 +548,14 @@
 			path = Http;
 			sourceTree = "<group>";
 		};
+		8F9B285725D55175006A4541 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				8F9B285825D551A2006A4541 /* ScoreUIView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		8FB545CD25D4182800A54ECC /* Geographical */ = {
 			isa = PBXGroup;
 			children = (
@@ -589,6 +603,9 @@
 			dependencies = (
 			);
 			name = QuizTP;
+			packageProductDependencies = (
+				8F9B286025D554EB006A4541 /* Lottie */,
+			);
 			productName = QuizTP;
 			productReference = 8F66D7032598D76A00B38608 /* QuizTP.app */;
 			productType = "com.apple.product-type.application";
@@ -666,6 +683,9 @@
 				Base,
 			);
 			mainGroup = 8F66D6FA2598D76A00B38608;
+			packageReferences = (
+				8F9B285F25D554EB006A4541 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 8F66D7042598D76A00B38608 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -683,7 +703,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E6F8CB425D46001007786CA /* world.json in Resources */,
+				8F7B0A1B25D56E700091AB9F /* world.json in Resources */,
 				8FB5460F25D4197000A54ECC /* GeographicalQuizResultsViewController.xib in Resources */,
 				8FBF3C9725D4308E003165B2 /* television.json in Resources */,
 				8FBF3CBF25D43380003165B2 /* geo.json in Resources */,
@@ -911,6 +931,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FB545FA25D4192400A54ECC /* GeographicalQuestionsSeeds.swift in Sources */,
+				8F9B285A25D551A2006A4541 /* ScoreUIView.swift in Sources */,
 				8FB5463C25D422BA00A54ECC /* QuizViewController.swift in Sources */,
 				8F623064259F345100B5ED2A /* AnswerCollectionViewCell.swift in Sources */,
 				8FB545F025D418EC00A54ECC /* GeographicalQuizViewController.swift in Sources */,
@@ -935,6 +956,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F66D76F2598D90400B38608 /* AnswerCollectionViewCell.swift in Sources */,
+				8F9B285925D551A2006A4541 /* ScoreUIView.swift in Sources */,
 				8F25AD9B25D544C1002A8538 /* InMemoryQuestionService.swift in Sources */,
 				8FB5463725D4228500A54ECC /* QuizViewController.swift in Sources */,
 				0E5343F725BDAD32008EA819 /* GeographicalQuizViewController.swift in Sources */,
@@ -1347,6 +1369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F9B285F25D554EB006A4541 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F9B286025D554EB006A4541 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F9B285F25D554EB006A4541 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		0E83876525BB4FBF0067969A /* Model.xcdatamodeld */ = {

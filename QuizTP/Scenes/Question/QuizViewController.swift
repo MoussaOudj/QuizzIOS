@@ -7,6 +7,7 @@
 
 import UIKit
 import Lottie
+import SwiftUI
 
 class QuizViewController: UIViewController {
     
@@ -18,6 +19,7 @@ class QuizViewController: UIViewController {
     var goodAnswer:String?
     var anecdote:String?
     var theme:String!
+    var score = 0;
     
     private struct const {
         static let questionTransitionDuration:TimeInterval = 2
@@ -92,13 +94,9 @@ class QuizViewController: UIViewController {
         }
     }
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
         requestQuestion()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
-    }
 }
 
 extension QuizViewController:UICollectionViewDelegate{
@@ -108,6 +106,7 @@ extension QuizViewController:UICollectionViewDelegate{
         if let goodAnswer = goodAnswer {
             
             if answerTable[indexPath.row] == goodAnswer {
+                score += 1
                 questionView.subviews.forEach { (view) in
                     view.removeFromSuperview()
                 }
@@ -169,7 +168,8 @@ extension QuizViewController:UICollectionViewDelegate{
                         animationView.play()
                         self.questionView.addSubview(animationView)
                         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
-                            self.navigationController?.popViewController(animated: true)
+                            let hostedView = UIHostingController(rootView: ScoreUIView(score: self.score)) 
+                            self.navigationController?.pushViewController(hostedView, animated: true)
                         }
                     }
                 }
