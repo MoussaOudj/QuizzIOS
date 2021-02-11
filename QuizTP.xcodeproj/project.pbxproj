@@ -344,7 +344,6 @@
 			isa = PBXGroup;
 			children = (
 				0EA907CD25D4677A00B490D3 /* clap.json */,
-				0E6F8CB325D46001007786CA /* world.json */,
 				8F6230C4259F432500B5ED2A /* Scenes */,
 				8F190359259BA87400848916 /* Assets.xcassets */,
 				8F19035B259BA87400848916 /* LaunchScreen.storyboard */,
